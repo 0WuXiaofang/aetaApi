@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f2cbe2e-3e0b-4879-8ad2-969e4d848648" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eta_user.sql" beforeDir="false" afterPath="$PROJECT_DIR$/eta_user.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/userOp.py" beforeDir="false" afterPath="$PROJECT_DIR$/userOp.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -97,8 +95,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/userOp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="169" column="34" lean-forward="true" selection-start-line="166" selection-start-column="53" selection-end-line="169" selection-end-column="34" />
+            <state relative-caret-position="304">
+              <caret line="180" column="12" selection-start-line="180" selection-start-column="12" selection-end-line="180" selection-end-column="12" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
@@ -161,6 +159,9 @@
       <find>wh</find>
       <find>ro</find>
     </findStrings>
+    <dirStrings>
+      <dir>E:\AETA\code\aetaflask</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -441,7 +442,7 @@
       <workItem from="1649723500708" duration="304000" />
       <workItem from="1649724095725" duration="9030000" />
       <workItem from="1650028559894" duration="3040000" />
-      <workItem from="1650035591081" duration="1294000" />
+      <workItem from="1650035591081" duration="2316000" />
     </task>
     <task id="LOCAL-00001" summary="将数据库表建立部分加入，使用的是mysql8.0">
       <created>1649776855535</created>
@@ -454,7 +455,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139736000" />
+    <option name="totallyTimeSpent" value="140758000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -470,8 +471,8 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.11659919" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49829352" visible="true" weight="0.11659919" />
+      <window_info id="Structure" order="2" sideWeight="0.5017065" side_tool="true" visible="true" weight="0.11659919" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49959514" visible="true" weight="0.07570978" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50040483" side_tool="true" weight="0.68661416" />
@@ -749,8 +750,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/userOp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="169" column="34" lean-forward="true" selection-start-line="166" selection-start-column="53" selection-end-line="169" selection-end-column="34" />
+        <state relative-caret-position="304">
+          <caret line="180" column="12" selection-start-line="180" selection-start-column="12" selection-end-line="180" selection-end-column="12" />
           <folding>
             <element signature="e#0#33#0" expanded="true" />
           </folding>
