@@ -169,8 +169,6 @@ def found_userInfo():
             key = db.get_tbColTitle_data("gasound", "eta_user")
             keyStr = ','.join(key)
             print("122", keyStr)
-            search_data = db.get_titleTarg_search("gasound", keyStr)
-            search_data = search_data[0]
             result = jsfy.l1_tol1(key, search_data)
             print("125", result)
             return result
