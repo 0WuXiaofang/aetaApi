@@ -4,9 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/utils/jsonfyDbtable.py" line="36" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f2cbe2e-3e0b-4879-8ad2-969e4d848648" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/userOp.py" beforeDir="false" afterPath="$PROJECT_DIR$/userOp.py" afterDir="false" />
-    </list>
+    <list default="true" id="4f2cbe2e-3e0b-4879-8ad2-969e4d848648" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,8 +93,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/userOp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="180" column="12" selection-start-line="180" selection-start-column="12" selection-end-line="180" selection-end-column="12" />
+            <state relative-caret-position="171">
+              <caret line="173" column="25" lean-forward="true" selection-start-line="173" selection-start-column="25" selection-end-line="173" selection-end-column="25" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
@@ -442,7 +440,7 @@
       <workItem from="1649723500708" duration="304000" />
       <workItem from="1649724095725" duration="9030000" />
       <workItem from="1650028559894" duration="3040000" />
-      <workItem from="1650035591081" duration="2316000" />
+      <workItem from="1650035591081" duration="2569000" />
     </task>
     <task id="LOCAL-00001" summary="将数据库表建立部分加入，使用的是mysql8.0">
       <created>1649776855535</created>
@@ -455,7 +453,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140758000" />
+    <option name="totallyTimeSpent" value="141011000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -750,8 +748,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/userOp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="180" column="12" selection-start-line="180" selection-start-column="12" selection-end-line="180" selection-end-column="12" />
+        <state relative-caret-position="171">
+          <caret line="173" column="25" lean-forward="true" selection-start-line="173" selection-start-column="25" selection-end-line="173" selection-end-column="25" />
           <folding>
             <element signature="e#0#33#0" expanded="true" />
           </folding>
