@@ -4,18 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/utils/jsonfyDbtable.py" line="36" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f2cbe2e-3e0b-4879-8ad2-969e4d848648" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/databaseDrivers.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/editor.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/keymaps/Default copy.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/maplistInfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/maplistInfo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predict_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/predict_info.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stationinfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/stationinfo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testdb.py" beforeDir="false" afterPath="$PROJECT_DIR$/testdb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userOp.py" beforeDir="false" afterPath="$PROJECT_DIR$/userOp.py" afterDir="false" />
-    </list>
+    <list default="true" id="4f2cbe2e-3e0b-4879-8ad2-969e4d848648" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +72,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testdb.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="19">
@@ -113,11 +102,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="19">
-              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="28" />
+              <caret line="1" column="28" lean-forward="true" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -452,7 +441,7 @@
       <workItem from="1649724095725" duration="9030000" />
       <workItem from="1650028559894" duration="3040000" />
       <workItem from="1650035591081" duration="5376000" />
-      <workItem from="1650088916661" duration="1604000" />
+      <workItem from="1650088916661" duration="1865000" />
     </task>
     <task id="LOCAL-00001" summary="将数据库表建立部分加入，使用的是mysql8.0">
       <created>1649776855535</created>
@@ -461,11 +450,18 @@
       <option name="project" value="LOCAL" />
       <updated>1649776855536</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="解决请求跨域问题">
+      <created>1650091372084</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1650091372085</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145422000" />
+    <option name="totallyTimeSpent" value="145683000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -477,28 +473,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="2" y="2" width="650" height="754" extended-state="0" />
-    <editor active="true" />
+    <frame x="-6" y="-6" width="1293" height="765" extended-state="6" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49535602" visible="true" weight="0.5371622" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49535602" visible="true" weight="0.2574899" />
       <window_info id="Structure" order="2" sideWeight="0.504644" side_tool="true" weight="0.31093118" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49959514" visible="true" weight="0.3836276" />
-      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50040483" side_tool="true" weight="0.68661416" />
-      <window_info anchor="bottom" id="Version Control" order="3" weight="0.32913387" />
+      <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49878544" visible="true" weight="0.38328075" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50121456" side_tool="true" visible="true" weight="0.38328075" />
+      <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.49878544" weight="0.3280757" />
       <window_info anchor="bottom" id="Python Console" order="4" weight="0.32900432" />
       <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" />
-      <window_info anchor="bottom" id="Run" order="8" weight="0.057803467" />
+      <window_info anchor="bottom" id="Run" order="8" weight="0.44952682" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.3982684" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="12" weight="0.047244094" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="SciView" order="2" visible="true" weight="0.050675675" />
+      <window_info anchor="right" id="SciView" order="2" visible="true" weight="0.024291499" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
     </layout>
@@ -542,7 +537,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="将数据库表建立部分加入，使用的是mysql8.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="将数据库表建立部分加入，使用的是mysql8.0" />
+    <MESSAGE value="解决请求跨域问题" />
+    <option name="LAST_COMMIT_MESSAGE" value="解决请求跨域问题" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://F:/Anaconda/anaconda/envs/todb.py/Lib/site-packages/flask/app.py">
@@ -759,13 +755,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testdb.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -773,6 +762,13 @@
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="28" lean-forward="true" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
         </state>
       </provider>
     </entry>
