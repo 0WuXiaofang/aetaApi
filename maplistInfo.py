@@ -1,7 +1,7 @@
 # 关于地震部分数据查询，从地震目录查询
 from flask import Flask, request
 from werkzeug.utils import redirect
-
+from flask_cors import  CORS
 #自己封装了一个，这个确实没啥用 from dbConnect import *
 import pymysql
 from utils.jsonfyDbtable import *
@@ -192,6 +192,7 @@ def ealst_locClassify():
     pass
 if __name__=='__main__':
     app.run(debug=True, port=5000, host="localhost")
+    CORS(app)
 
 
 

@@ -1,4 +1,5 @@
 from flask import Flask, request
+from flask_cors import  CORS
 from dbConnect import *
 from utils.db_handle import *
 from werkzeug.utils import redirect
@@ -122,4 +123,5 @@ def gettablename():
         return "fail"
 
 if __name__=='__main__':
-    app.run(debug=True, port=5000, host="localhost")
+    app.run(debug=True, port=5555, host="localhost")
+    CORS(app)

@@ -1,4 +1,7 @@
+from flask_cors import CORS
+
 from utils.jsonfyDbtable import *
+from flask_cors import  CORS
 import numpy
 # 注册
 from flask import Flask, request
@@ -182,6 +185,8 @@ def update_userInfo(old):
     pass
 if __name__=='__main__':
     app.run(debug=True, port=5000, host="localhost")
+    CORS(app)
+
 
 
 

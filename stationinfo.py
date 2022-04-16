@@ -1,5 +1,6 @@
 #站点信息接口
 # 关于地震部分数据查询，从地震目录查询
+from flask_cors import  CORS
 from flask import Flask, request
 from werkzeug.utils import redirect
 from utils.db_handle import *
@@ -117,6 +118,7 @@ def search_byLimit():
 
 if __name__=='__main__':
     app.run(debug=True, port=5000, host="localhost")
+    CORS(app)
 
 
 
