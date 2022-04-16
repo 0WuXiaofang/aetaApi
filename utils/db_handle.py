@@ -25,6 +25,7 @@ class DB(object):
         print("数据库名",dbname)
 
     def close_connect(self):
+
         # 关闭数据连接
         # 提交，物理存储
         self.conn.commit()
@@ -69,7 +70,9 @@ class DB(object):
         sqlStr = "INSERT INTO %s VALUES %s"%(dbtablename,insert_values)
         print("数据库管理员正在插入数据\n",sqlStr)
         self.cur.execute(sqlStr)
+        print("插入完成")
         self.conn.commit()
+        # self.close_connect()
     def get_titleTarg_search(self,dbtablename,select_data):
         '''
         寻找指定表头数据的值
