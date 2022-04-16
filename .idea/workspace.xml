@@ -4,7 +4,17 @@
     <bookmark url="file://$PROJECT_DIR$/utils/jsonfyDbtable.py" line="36" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f2cbe2e-3e0b-4879-8ad2-969e4d848648" name="Default Changelist" comment="" />
+    <list default="true" id="4f2cbe2e-3e0b-4879-8ad2-969e4d848648" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_windows/laf.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codestyles/Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/debugger.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maplistInfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/maplistInfo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predict_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/predict_info.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stationinfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/stationinfo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userOp.py" beforeDir="false" afterPath="$PROJECT_DIR$/userOp.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/predict_info.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="78" column="12" selection-start-line="78" selection-start-column="12" selection-end-line="78" selection-end-column="12" />
+            <state relative-caret-position="285">
+              <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-end-line="16" />
               <folding>
                 <element signature="e#11#43#0" expanded="true" />
               </folding>
@@ -42,8 +52,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/maplistInfo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="194" column="12" selection-start-line="194" selection-start-column="12" selection-end-line="194" selection-end-column="12" />
+            <state relative-caret-position="285">
+              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
               <folding>
                 <element signature="e#21#53#0" expanded="true" />
               </folding>
@@ -54,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stationinfo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="120" column="12" selection-start-line="120" selection-start-column="12" selection-end-line="120" selection-end-column="12" />
+            <state relative-caret-position="304">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="e#29#57#0" expanded="true" />
               </folding>
@@ -66,7 +76,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stationinfo.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
+            <state relative-caret-position="2071">
               <caret line="109" column="38" selection-start-line="109" selection-start-column="38" selection-end-line="109" selection-end-column="38" />
             </state>
           </provider>
@@ -87,26 +97,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../../地磁和地深/GA_20220220-20220226/ga/todb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
+            <state relative-caret-position="19">
               <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/userOp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3477">
-              <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+            <state relative-caret-position="323">
+              <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="28" lean-forward="true" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+            <state relative-caret-position="239">
+              <caret line="97" selection-start-line="97" selection-end-line="97" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -186,12 +202,12 @@
         <option value="$PROJECT_DIR$/utils/jsonfyDbtable.py" />
         <option value="$PROJECT_DIR$/utils/db_handle.py" />
         <option value="$PROJECT_DIR$/config/intest.ini" />
-        <option value="$PROJECT_DIR$/app.py" />
-        <option value="$PROJECT_DIR$/userOp.py" />
-        <option value="$PROJECT_DIR$/stationinfo.py" />
-        <option value="$PROJECT_DIR$/predict_info.py" />
-        <option value="$PROJECT_DIR$/maplistInfo.py" />
         <option value="$PROJECT_DIR$/testdb.py" />
+        <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/maplistInfo.py" />
+        <option value="$PROJECT_DIR$/predict_info.py" />
+        <option value="$PROJECT_DIR$/stationinfo.py" />
+        <option value="$PROJECT_DIR$/userOp.py" />
       </list>
     </option>
   </component>
@@ -207,6 +223,27 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="aetaflask" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="aetaflask" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="aetaflask" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="utils" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -250,27 +287,6 @@
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
               <item name="&lt; Python 3.6 (eataflaskenv) &gt;" type="70bed36:NamedLibraryElementNode" />
               <item name="Typeshed Stubs" type="9c07c3ae:PyTypeShedNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="aetaflask" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="aetaflask" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="aetaflask" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="utils" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -441,7 +457,8 @@
       <workItem from="1649724095725" duration="9030000" />
       <workItem from="1650028559894" duration="3040000" />
       <workItem from="1650035591081" duration="5376000" />
-      <workItem from="1650088916661" duration="1865000" />
+      <workItem from="1650088916661" duration="2388000" />
+      <workItem from="1650098586244" duration="522000" />
     </task>
     <task id="LOCAL-00001" summary="将数据库表建立部分加入，使用的是mysql8.0">
       <created>1649776855535</created>
@@ -457,11 +474,18 @@
       <option name="project" value="LOCAL" />
       <updated>1650091372085</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="有个端口写错了改一下">
+      <created>1650091863155</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1650091863155</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145683000" />
+    <option name="totallyTimeSpent" value="146728000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -474,13 +498,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1293" height="765" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49535602" visible="true" weight="0.2574899" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49535602" visible="true" weight="0.33846155" />
       <window_info id="Structure" order="2" sideWeight="0.504644" side_tool="true" weight="0.31093118" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49878544" visible="true" weight="0.38328075" />
-      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50121456" side_tool="true" visible="true" weight="0.38328075" />
+      <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.4979757" visible="true" weight="0.12776025" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.5020243" side_tool="true" visible="true" weight="0.12776025" />
       <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.49878544" weight="0.3280757" />
       <window_info anchor="bottom" id="Python Console" order="4" weight="0.32900432" />
       <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
@@ -538,7 +563,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="将数据库表建立部分加入，使用的是mysql8.0" />
     <MESSAGE value="解决请求跨域问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="解决请求跨域问题" />
+    <MESSAGE value="有个端口写错了改一下" />
+    <option name="LAST_COMMIT_MESSAGE" value="有个端口写错了改一下" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://F:/Anaconda/anaconda/envs/todb.py/Lib/site-packages/flask/app.py">
@@ -690,6 +716,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/stationinfo.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2071">
+          <caret line="109" column="38" selection-start-line="109" selection-start-column="38" selection-end-line="109" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testdb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/public_data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -704,71 +747,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/userOp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3477">
-          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../地磁和地深/GA_20220220-20220226/ga/todb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
+        <state relative-caret-position="19">
           <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stationinfo.sql">
+    <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="109" column="38" selection-start-line="109" selection-start-column="38" selection-end-line="109" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stationinfo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="120" column="12" selection-start-line="120" selection-start-column="12" selection-end-line="120" selection-end-column="12" />
+        <state relative-caret-position="239">
+          <caret line="97" selection-start-line="97" selection-end-line="97" selection-end-column="26" />
           <folding>
-            <element signature="e#29#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/predict_info.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="78" column="12" selection-start-line="78" selection-start-column="12" selection-end-line="78" selection-end-column="12" />
-          <folding>
-            <element signature="e#11#43#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/maplistInfo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="194" column="12" selection-start-line="194" selection-start-column="12" selection-end-line="194" selection-end-column="12" />
+        <state relative-caret-position="285">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
           <folding>
             <element signature="e#21#53#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testdb.py">
+    <entry file="file://$PROJECT_DIR$/predict_info.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+        <state relative-caret-position="285">
+          <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-end-line="16" />
           <folding>
-            <element signature="e#0#30#0" expanded="true" />
+            <element signature="e#11#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
+    <entry file="file://$PROJECT_DIR$/stationinfo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="28" lean-forward="true" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+        <state relative-caret-position="304">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#29#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/userOp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

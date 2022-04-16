@@ -13,6 +13,7 @@ jsfy=jsonfyDbtable()
 # 去封装一个模糊查询
 #调用模糊查询的方法
 app = Flask(__name__)
+CORS(app, resources=r'/*')
 @app.route('/searchinfo',methods=["POST"])
 def searchEqlisInfo():
 

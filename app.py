@@ -95,6 +95,7 @@ def dbselctAllt(tablename):
 
 app = Flask(__name__)
 
+CORS(app, resources=r'/*')
 
 @app.route("/get_allTable_data", methods=["POST"])
 def allnum():

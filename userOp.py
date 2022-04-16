@@ -1,7 +1,9 @@
 from flask_cors import CORS
 
 from utils.jsonfyDbtable import *
-from flask_cors import  CORS
+
+from flask_cors import CORS, cross_origin
+
 import numpy
 # 注册
 from flask import Flask, request
@@ -14,6 +16,8 @@ import json
 db=DB()
 jsfy=jsonfyDbtable()
 app = Flask(__name__)
+CORS(app, resources=r'/*')
+
 def userName_ishaving(userName):
     try:
         print("用户名存在验证")
