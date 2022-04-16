@@ -1,4 +1,5 @@
 from utils.db_handle import DB
+from flask_cors import  CORS
 # from action.get_rely import GetRely
 # from utils.HttpClient import HttpClient
 def main():

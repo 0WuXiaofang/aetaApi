@@ -1,6 +1,7 @@
 # 预测数据分析导出
 from flask import Flask, request
 from werkzeug.utils import redirect
+from flask_cors import  CORS
 from utils.db_handle import *
 from utils.jsonfyDbtable import *
 #自己封装了一个，这个确实没啥用 from dbConnect import *
@@ -75,6 +76,7 @@ def magnScope_search():
 
 if __name__=='__main__':
     app.run(debug=True, port=5000, host="localhost")
+    CORS(app)
 
 
 
