@@ -33,6 +33,23 @@ class DB(object):
         self.cur.close()
         # 连接对象关闭
         self.conn.close()
+    def get_youDefine_fondata(self,dbtablename,selectTarge,defineTarge):
+        '''
+        获取指定限制语句的指定数据
+        :param dbtablename:
+        :param selectTarge:
+        :param defineTarge:
+        :return:
+        '''
+        sqlStr = "select %s from %s where %s" % (selectTarge,dbtablename,defineTarge)
+        print("youdefine",sqlStr)
+        self.cur.execute(sqlStr)
+        res = self.cur.fetchall()
+
+        return res
+
+
+
 
     def get_api_list(self,dbtablename):
         """获取一个表所有的对象数据"""

@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/utils/jsonfyDbtable.py" line="36" />
+    <bookmark url="file://$PROJECT_DIR$/utils/jsonfyDbtable.py" line="46" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f2cbe2e-3e0b-4879-8ad2-969e4d848648" name="Default Changelist" comment="">
+    <list default="true" id="4f2cbe2e-3e0b-4879-8ad2-969e4d848648" name="Default Changelist" comment="用户注册部分json返回格式异常">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userOp.py" beforeDir="false" afterPath="$PROJECT_DIR$/userOp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maplistInfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/maplistInfo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/db_handle.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/db_handle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/jsonfyDbtable.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/jsonfyDbtable.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,22 +21,25 @@
     <SUITE FILE_PATH="coverage/aetaflask$testdb.coverage" NAME="testdb Coverage Results" MODIFIED="1649340106217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/aetaflask$Flask__stationinfo_py_.coverage" NAME="Flask (stationinfo.py) Coverage Results" MODIFIED="1649692174452" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/aetaflask$config_handler.coverage" NAME="config_handler Coverage Results" MODIFIED="1649340067676" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/aetaflask$aetaflask.coverage" NAME="aetaflask Coverage Results" MODIFIED="1649686348302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/aetaflask$aetaflask.coverage" NAME="aetaflask Coverage Results" MODIFIED="1650248253117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/aetaflask$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1650028576044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/aetaflask$jsonfyDbtable.coverage" NAME="jsonfyDbtable Coverage Results" MODIFIED="1649688551844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
-    <SUITE FILE_PATH="coverage/aetaflask$Flask__userOp_py_.coverage" NAME="Flask (userOp.py) Coverage Results" MODIFIED="1650104114453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/aetaflask$Flask__maplistInfo_py_.coverage" NAME="Flask (maplistInfo.py) Coverage Results" MODIFIED="1649693138781" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/aetaflask$jsonfyDbtable.coverage" NAME="jsonfyDbtable Coverage Results" MODIFIED="1650249699026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/aetaflask$Flask__userOp_py_.coverage" NAME="Flask (userOp.py) Coverage Results" MODIFIED="1650250108066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/aetaflask$Flask__maplistInfo_py_.coverage" NAME="Flask (maplistInfo.py) Coverage Results" MODIFIED="1650259201441" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/aetaflask$db_handle.coverage" NAME="db_handle Coverage Results" MODIFIED="1649397126483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
     <SUITE FILE_PATH="coverage/aetaflask$dbConnect.coverage" NAME="dbConnect Coverage Results" MODIFIED="1649333485091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/aetaflask$tets.coverage" NAME="tets Coverage Results" MODIFIED="1649338785115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/config" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="aetaflask" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stationinfo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="-1140">
+              <caret line="18" column="37" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="37" />
               <folding>
                 <element signature="e#29#57#0" expanded="true" />
               </folding>
@@ -43,41 +47,59 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/stationinfo.sql">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/maplistInfo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2071">
-              <caret line="109" column="38" selection-start-line="109" selection-start-column="38" selection-end-line="109" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testdb.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+            <state relative-caret-position="433">
+              <caret line="116" column="14" selection-start-line="116" selection-start-column="14" selection-end-line="116" selection-end-column="14" />
               <folding>
-                <element signature="e#0#30#0" expanded="true" />
+                <element signature="e#21#53#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../地磁和地深/GA_20220220-20220226/ga/todb.py">
+        <entry file="file://$PROJECT_DIR$/../../eataflaskenv/Lib/site-packages/flask/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+            <state relative-caret-position="-356">
+              <caret line="1518" selection-start-line="1518" selection-end-line="1518" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../eataflaskenv/Lib/site-packages/pymysql/connections.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="468" selection-start-line="468" selection-end-line="468" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/jsonfyDbtable.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/eqlst.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-38">
+              <caret line="22" column="27" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/userOp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="125" column="17" lean-forward="true" selection-start-line="125" selection-start-column="17" selection-end-line="125" selection-end-column="17" />
+            <state relative-caret-position="564">
+              <caret line="181" column="11" selection-start-line="181" selection-start-column="11" selection-end-line="181" selection-end-column="11" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
               </folding>
@@ -86,33 +108,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://F:/Python/Lib/json/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="230" selection-start-line="230" selection-end-line="230" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/db_handle.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="75" column="39" selection-start-line="75" selection-start-column="39" selection-end-line="75" selection-end-column="39" />
+            <state relative-caret-position="106">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1710">
-              <caret line="97" selection-start-line="97" selection-end-line="97" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -163,6 +164,9 @@
       <find>cursor</find>
       <find>wh</find>
       <find>ro</find>
+      <find>land</find>
+      <find>seismicL_classify</find>
+      <find>classify_magnitude</find>
     </findStrings>
     <dirStrings>
       <dir>E:\AETA\code\aetaflask</dir>
@@ -190,23 +194,23 @@
         <option value="$PROJECT_DIR$/predoct_info.py" />
         <option value="$PROJECT_DIR$/userRigister.py" />
         <option value="$PROJECT_DIR$/utils/users_otherOP.py" />
-        <option value="$PROJECT_DIR$/utils/jsonfyDbtable.py" />
         <option value="$PROJECT_DIR$/config/intest.ini" />
         <option value="$PROJECT_DIR$/testdb.py" />
         <option value="$PROJECT_DIR$/app.py" />
-        <option value="$PROJECT_DIR$/maplistInfo.py" />
         <option value="$PROJECT_DIR$/predict_info.py" />
         <option value="$PROJECT_DIR$/stationinfo.py" />
-        <option value="$PROJECT_DIR$/utils/db_handle.py" />
         <option value="$PROJECT_DIR$/userOp.py" />
+        <option value="$PROJECT_DIR$/utils/jsonfyDbtable.py" />
+        <option value="$PROJECT_DIR$/utils/db_handle.py" />
+        <option value="$PROJECT_DIR$/maplistInfo.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="4" />
-    <option name="y" value="4" />
-    <option name="width" value="1300" />
-    <option name="height" value="1508" />
+    <option name="x" value="-12" />
+    <option name="y" value="-12" />
+    <option name="width" value="2156" />
+    <option name="height" value="1510" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -312,7 +316,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Flask server.Flask (userOp.py)">
+  <component name="RunManager" selected="Flask server.Flask (maplistInfo.py)">
     <configuration name="jsonfyDbtable" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="aetaflask" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -412,11 +416,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Flask server.Flask (userOp.py)" />
-        <item itemvalue="Flask server.Flask (app.py)" />
         <item itemvalue="Flask server.Flask (maplistInfo.py)" />
-        <item itemvalue="Flask server.Flask (stationinfo.py)" />
+        <item itemvalue="Flask server.Flask (userOp.py)" />
         <item itemvalue="Python.jsonfyDbtable" />
+        <item itemvalue="Flask server.Flask (app.py)" />
+        <item itemvalue="Flask server.Flask (stationinfo.py)" />
       </list>
     </recent_temporary>
   </component>
@@ -450,7 +454,9 @@
       <workItem from="1650035591081" duration="5376000" />
       <workItem from="1650088916661" duration="2388000" />
       <workItem from="1650098586244" duration="1649000" />
-      <workItem from="1650101210754" duration="2917000" />
+      <workItem from="1650101210754" duration="3534000" />
+      <workItem from="1650207209283" duration="1019000" />
+      <workItem from="1650243487091" duration="9909000" />
     </task>
     <task id="LOCAL-00001" summary="将数据库表建立部分加入，使用的是mysql8.0">
       <created>1649776855535</created>
@@ -480,11 +486,18 @@
       <option name="project" value="LOCAL" />
       <updated>1650099147878</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="用户注册部分json返回格式异常">
+      <created>1650104176110</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1650104176111</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150772000" />
+    <option name="totallyTimeSpent" value="162317000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -499,18 +512,18 @@
     <frame x="-6" y="-6" width="1293" height="765" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49535602" visible="true" weight="0.14898786" />
+      <window_info id="Favorites" order="0" sideWeight="0.50350875" side_tool="true" visible="true" weight="0.15384616" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49649122" visible="true" weight="0.15384616" />
       <window_info id="Structure" order="2" sideWeight="0.504644" side_tool="true" weight="0.31093118" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.4979757" weight="0.4873817" />
-      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50121456" side_tool="true" visible="true" weight="0.50473183" />
-      <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.49878544" weight="0.3280757" />
-      <window_info anchor="bottom" id="Python Console" order="4" weight="0.32900432" />
+      <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49716598" weight="0.4873817" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.2388664" side_tool="true" visible="true" weight="0.100946374" />
+      <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.4979757" weight="0.3280757" />
+      <window_info anchor="bottom" id="Python Console" order="4" sideWeight="0.7676113" weight="0.3280757" />
       <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="8" sideWeight="0.49878544" visible="true" weight="0.50473183" />
+      <window_info active="true" anchor="bottom" id="Run" order="8" sideWeight="0.7611336" visible="true" weight="0.100946374" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.3982684" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
@@ -564,7 +577,8 @@
     <MESSAGE value="解决请求跨域问题" />
     <MESSAGE value="有个端口写错了改一下" />
     <MESSAGE value="cors又配置了一下下跨域全局支持" />
-    <option name="LAST_COMMIT_MESSAGE" value="cors又配置了一下下跨域全局支持" />
+    <MESSAGE value="用户注册部分json返回格式异常" />
+    <option name="LAST_COMMIT_MESSAGE" value="用户注册部分json返回格式异常" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://F:/Anaconda/anaconda/envs/todb.py/Lib/site-packages/flask/app.py">
@@ -633,13 +647,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/jsonfyDbtable.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-349">
-          <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://F:/Python/Lib/configparser.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1498">
@@ -661,13 +668,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" selection-start-line="8" selection-end-line="12" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eqlst.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="22" column="27" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -709,33 +709,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/maplistInfo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-          <folding>
-            <element signature="e#21#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stationinfo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#29#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stationinfo.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2071">
-          <caret line="109" column="38" selection-start-line="109" selection-start-column="38" selection-end-line="109" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testdb.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -743,6 +716,20 @@
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../地磁和地深/GA_20220220-20220226/ga/todb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/Python/Lib/json/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4332">
+          <caret line="230" selection-start-line="230" selection-end-line="230" />
         </state>
       </provider>
     </entry>
@@ -756,13 +743,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/public_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="39" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/intest.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -770,43 +750,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../地磁和地深/GA_20220220-20220226/ga/todb.py">
+    <entry file="file://$PROJECT_DIR$/eqlst.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        <state relative-caret-position="-38">
+          <caret line="22" column="27" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stationinfo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1140">
+          <caret line="18" column="37" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="37" />
+          <folding>
+            <element signature="e#29#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stationinfo.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-269">
+          <caret line="109" column="38" selection-start-line="109" selection-start-column="38" selection-end-line="109" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/public_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="39" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../eataflaskenv/Lib/site-packages/flask/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="1537" selection-start-line="1537" selection-end-line="1537" />
+        <state relative-caret-position="-356">
+          <caret line="1518" selection-start-line="1518" selection-end-line="1518" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/db_handle.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="75" column="39" selection-start-line="75" selection-start-column="39" selection-end-line="75" selection-end-column="39" />
+        <state relative-caret-position="106">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://F:/Python/Lib/json/__init__.py">
+    <entry file="file://$PROJECT_DIR$/userOp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="230" selection-start-line="230" selection-end-line="230" />
+        <state relative-caret-position="564">
+          <caret line="181" column="11" selection-start-line="181" selection-start-column="11" selection-end-line="181" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/userOp.py">
+    <entry file="file://$PROJECT_DIR$/utils/jsonfyDbtable.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="125" column="17" lean-forward="true" selection-start-line="125" selection-start-column="17" selection-end-line="125" selection-end-column="17" />
+        <state relative-caret-position="406">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../eataflaskenv/Lib/site-packages/pymysql/connections.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="468" selection-start-line="468" selection-end-line="468" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maplistInfo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="433">
+          <caret line="116" column="14" selection-start-line="116" selection-start-column="14" selection-end-line="116" selection-end-column="14" />
           <folding>
-            <element signature="e#0#27#0" expanded="true" />
+            <element signature="e#21#53#0" expanded="true" />
           </folding>
         </state>
       </provider>

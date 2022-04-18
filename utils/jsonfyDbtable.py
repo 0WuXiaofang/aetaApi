@@ -33,18 +33,28 @@ class jsonfyDbtable(object):
             return str_json
         except:
             return "jsonfy_error"
+    # def json_inArray(self,key_data,value_data):
+    #     '''
+    #     装着json数组的array
+    #     :param key_data:
+    #     :param value_data:
+    #     :return:
+    #     '''
+
+
+
 
 if __name__ == '__main__':
     jsfy=jsonfyDbtable()
     print("测试")
-    # key=[1,2,3,4]
-    # testdata=[('101.39', '27.92', '3.9', '2016-12-25 07:26:06', '1482621966', '12', '四川凉山州木里县'),
-    #           ('104.72', '28.16', '4.2', '2017-01-15 18:05:35', '1484474735', '15', '四川宜宾市珙县'),
-    #           ('104.73', '28.14', '3.7', '2017-01-15 19:20:53', '1484479253', '15', '四川宜宾市筠连县')]
-    # jsfy.jsonfy(key,testdata)
-    # key1=["地区","站点","longtitude","latitude,","magndata","magnupdate","sounddata","soundupdate"]
-    # data=['四川冕宁漫水湾', '181', '102.167771', '28.208206', 'True', 'True', 'True', 'True']
-    # jsfy.l1_tol1(key1,data)
+    key=[1,2,3,4]
+    testdata=[('101.39', '27.92', '3.9', '2016-12-25 07:26:06', '1482621966', '12', '四川凉山州木里县'),
+              ('104.72', '28.16', '4.2', '2017-01-15 18:05:35', '1484474735', '15', '四川宜宾市珙县'),
+              ('104.73', '28.14', '3.7', '2017-01-15 19:20:53', '1484479253', '15', '四川宜宾市筠连县')]
+    jsfy.jsonfy(key,testdata)
+    key1=["地区","站点","longtitude","latitude,","magndata","magnupdate","sounddata","soundupdate"]
+    data=['四川冕宁漫水湾', '181', '102.167771', '28.208206', 'True', 'True', 'True', 'True']
+    jsfy.l1_tol1(key1,data)
 
 
 
