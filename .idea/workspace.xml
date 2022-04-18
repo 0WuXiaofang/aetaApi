@@ -4,12 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/utils/jsonfyDbtable.py" line="46" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f2cbe2e-3e0b-4879-8ad2-969e4d848648" name="Default Changelist" comment="用户注册部分json返回格式异常">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maplistInfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/maplistInfo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/db_handle.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/db_handle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/jsonfyDbtable.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/jsonfyDbtable.py" afterDir="false" />
-    </list>
+    <list default="true" id="4f2cbe2e-3e0b-4879-8ad2-969e4d848648" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,8 +45,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/maplistInfo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="116" column="14" selection-start-line="116" selection-start-column="14" selection-end-line="116" selection-end-column="14" />
+            <state relative-caret-position="148">
+              <caret line="101" column="48" lean-forward="true" selection-start-line="101" selection-start-column="48" selection-end-line="101" selection-end-column="48" />
               <folding>
                 <element signature="e#21#53#0" expanded="true" />
               </folding>
@@ -456,7 +451,7 @@
       <workItem from="1650098586244" duration="1649000" />
       <workItem from="1650101210754" duration="3534000" />
       <workItem from="1650207209283" duration="1019000" />
-      <workItem from="1650243487091" duration="9909000" />
+      <workItem from="1650243487091" duration="9999000" />
     </task>
     <task id="LOCAL-00001" summary="将数据库表建立部分加入，使用的是mysql8.0">
       <created>1649776855535</created>
@@ -493,11 +488,18 @@
       <option name="project" value="LOCAL" />
       <updated>1650104176111</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="修复了几个接口格式，记得查收">
+      <created>1650260096155</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1650260096155</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162317000" />
+    <option name="totallyTimeSpent" value="162407000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -510,20 +512,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1293" height="765" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Favorites" order="0" sideWeight="0.50350875" side_tool="true" visible="true" weight="0.15384616" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49649122" visible="true" weight="0.15384616" />
+      <window_info id="Favorites" order="0" sideWeight="0.5046948" side_tool="true" visible="true" weight="0.15384616" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49530515" visible="true" weight="0.15384616" />
       <window_info id="Structure" order="2" sideWeight="0.504644" side_tool="true" weight="0.31093118" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49716598" weight="0.4873817" />
-      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.2388664" side_tool="true" visible="true" weight="0.100946374" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.23319837" side_tool="true" visible="true" weight="0.3280757" />
       <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.4979757" weight="0.3280757" />
-      <window_info anchor="bottom" id="Python Console" order="4" sideWeight="0.7676113" weight="0.3280757" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="4" sideWeight="0.7668016" visible="true" weight="0.3280757" />
       <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="8" sideWeight="0.7611336" visible="true" weight="0.100946374" />
+      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.7611336" weight="0.100946374" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.3982684" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
@@ -578,7 +579,8 @@
     <MESSAGE value="有个端口写错了改一下" />
     <MESSAGE value="cors又配置了一下下跨域全局支持" />
     <MESSAGE value="用户注册部分json返回格式异常" />
-    <option name="LAST_COMMIT_MESSAGE" value="用户注册部分json返回格式异常" />
+    <MESSAGE value="修复了几个接口格式，记得查收" />
+    <option name="LAST_COMMIT_MESSAGE" value="修复了几个接口格式，记得查收" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://F:/Anaconda/anaconda/envs/todb.py/Lib/site-packages/flask/app.py">
@@ -824,8 +826,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/maplistInfo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="116" column="14" selection-start-line="116" selection-start-column="14" selection-end-line="116" selection-end-column="14" />
+        <state relative-caret-position="148">
+          <caret line="101" column="48" lean-forward="true" selection-start-line="101" selection-start-column="48" selection-end-line="101" selection-end-column="48" />
           <folding>
             <element signature="e#21#53#0" expanded="true" />
           </folding>
