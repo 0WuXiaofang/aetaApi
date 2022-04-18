@@ -1,7 +1,9 @@
 from flask_cors import CORS
 
 from utils.jsonfyDbtable import *
-from flask_cors import  CORS
+
+from flask_cors import CORS, cross_origin
+
 import numpy
 # 注册
 from flask import Flask, request
@@ -14,6 +16,8 @@ import json
 db=DB()
 jsfy=jsonfyDbtable()
 app = Flask(__name__)
+CORS(app, resources=r'/*')
+
 def userName_ishaving(userName):
     try:
         print("用户名存在验证")
@@ -94,18 +98,19 @@ def newerInfo_check(newerUserName,newerPassWord,newerPassWord_repeat):
     :param newerPassWord_repeat:
     :return:
     '''
+
     try:
         if newrName_check(newerUserName) and newerPassword_check(newerPassWord, newerPassWord_repeat):
             #         执行数据库新用户增加操作
             print("可以增加一个新用户")
             insert_userValues = (0, newerUserName, newerPassWord, 1, 0)
-            print(insert_userValues)
+            print("10555",insert_userValues)
             db.insert_dab("eta_user", str(insert_userValues))
             # 插入完后关闭数据库
 
             # db.close_connect()
             print("插入成功")
-            result = json.dumps({"200", "新用户增加成功"})
+            result = json.dumps({"200": "新用户增加成功"})
             return result
 
         else:
@@ -115,7 +120,6 @@ def newerInfo_check(newerUserName,newerPassWord,newerPassWord_repeat):
             return result
     except:
         db.close_connect()
-
         return "fail"
 
 @app.route("/user/login",methods=["POST"])
@@ -130,7 +134,7 @@ def user_login():
             return json.dumps({"userLogin": 200})
         return json.dumps({"fault,输入错误": 500})
     except:
-        db.close_connect()
+        db.error_rollback()
         return "fail"
 
 

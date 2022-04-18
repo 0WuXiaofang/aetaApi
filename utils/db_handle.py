@@ -25,6 +25,7 @@ class DB(object):
         print("数据库名",dbname)
 
     def close_connect(self):
+
         # 关闭数据连接
         # 提交，物理存储
         self.conn.commit()
@@ -32,6 +33,23 @@ class DB(object):
         self.cur.close()
         # 连接对象关闭
         self.conn.close()
+    def get_youDefine_fondata(self,dbtablename,selectTarge,defineTarge):
+        '''
+        获取指定限制语句的指定数据
+        :param dbtablename:
+        :param selectTarge:
+        :param defineTarge:
+        :return:
+        '''
+        sqlStr = "select %s from %s where %s" % (selectTarge,dbtablename,defineTarge)
+        print("youdefine",sqlStr)
+        self.cur.execute(sqlStr)
+        res = self.cur.fetchall()
+
+        return res
+
+
+
 
     def get_api_list(self,dbtablename):
         """获取一个表所有的对象数据"""
@@ -69,7 +87,9 @@ class DB(object):
         sqlStr = "INSERT INTO %s VALUES %s"%(dbtablename,insert_values)
         print("数据库管理员正在插入数据\n",sqlStr)
         self.cur.execute(sqlStr)
+        print("插入完成")
         self.conn.commit()
+        # self.close_connect()
     def get_titleTarg_search(self,dbtablename,select_data):
         '''
         寻找指定表头数据的值

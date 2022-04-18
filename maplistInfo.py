@@ -13,6 +13,7 @@ jsfy=jsonfyDbtable()
 # 去封装一个模糊查询
 #调用模糊查询的方法
 app = Flask(__name__)
+CORS(app, resources=r'/*')
 @app.route('/searchinfo',methods=["POST"])
 def searchEqlisInfo():
 
@@ -21,16 +22,21 @@ def searchEqlisInfo():
     key_word=request.form.get("key_word")
     alike_data=request.form.get("alike_data")
     result=db.alike_get_data(tablename, key_word,alike_data)
+    print("result",result)
+    # 还需要表头的数据做key
+    key=db.get_tbColTitle_data("gasound","eqlst")
+    print("key",key)
+
+    keyStr = ','.join(key)
+    print("122", keyStr)
+    result = jsfy.jsonfy(key, result)
 
     print(result)
-    if result==0:
+    if result==0 or len(result)==0:
         return json.dumps({"statment":"未找到信息"})
-    key=list(range(0,len(result)))
-
-    res=dict(zip(key,list(result)))
-    res=json.dumps(res)
-    return res
-def land_location():
+    # key=list(range(0,len(result)))
+    return result
+def land_location(area):
     """
     对地震通过经纬度进行划分，划分为8个地震带
     :param longtitude:
@@ -39,6 +45,7 @@ def land_location():
     """
     # 经纬度划分地带
     # 区域分类，id为观测站id，range为经纬度范围，分别是左上角和右下角经纬度
+    area=int(area)
     area_groups = [
         {'id': set([133, 246, 119, 122, 59, 127]), 'range': [30, 34, 98, 101]},
         {'id': set(
@@ -65,44 +72,53 @@ def land_location():
     # eq_area = -1
     # 做地区分类
     try:
-        for area in (0, 1, 2, 3, 4, 5, 6, 7):
-            sid = area_groups[area]['id']
-            em_list = []
-            for id_num in sid:
-                try:
-                    table_list = db.get_all_tablename("gasound")
-                    # print("读取数据库所有的表名成功",table_list)
-                    # 读取相应的表的信息并且关键字为StationID
-                    locm_tablename = "tab_%s_magn" % id_num
-                    print("loc——tablename", locm_tablename)
-                    em_list.append(db.get_api_list(locm_tablename))
-                    print("\n")
-                    # print("这个是站点信息magn:",em_list)
-                except:
-                    print("站点没在这个范围内部\n", )
-                    continue
-            # em_data = pd.concat(em_list)
-            # 对python的变量内存进行回收
-            # del em_list
-            ga_list = []
-            for id_num in sid:
-                try:
-                    table_list = db.get_all_tablename("gasound")
-                    # print("读取数据库所有的表名成功", table_list)
-                    # 读取相应的表的信息并且关键字为StationID
-                    locs_tablename = "tab_%s_sound" % id_num
-                    ga_list.append(db.get_api_list(locs_tablename))
+        sid = area_groups[area]['id']
+        em_list = []
+        for id_num in sid:
+            try:
+                table_list = db.get_all_tablename("gasound")
+                # print("读取数据库所有的表名成功",table_list)
+                # 读取相应的表的信息并且关键字为StationID
+                locm_tablename = "tab_%s_magn" % id_num
+                print("loc——tablename", locm_tablename)
+                em_list.append(db.get_api_list(locm_tablename))
+                print("\n")
+                # print("这个是站点信息magn:",em_list)
+            except:
+                print("站点没在这个范围内部\n", )
+                continue
+        # em_data = pd.concat(em_list)
+        # 对python的变量内存进行回收
+        # del em_list
+        ga_list = []
+        for id_num in sid:
+            try:
+                table_list = db.get_all_tablename("gasound")
+                # print("读取数据库所有的表名成功", table_list)
+                # 读取相应的表的信息并且关键字为StationID
+                locs_tablename = "tab_%s_sound" % id_num
+                ga_list.append(db.get_api_list(locs_tablename))
 
-                    # print("获取到的划分数据sound",ga_list)
-                except:
-                    print("站点没在这个范围内部\n", )
-                    continue
+                # print("获取到的划分数据sound",ga_list)
+            except:
+                print("站点没在这个范围内部\n", )
+                continue
+
         # print("galist\n",ga_list)
         print("数据类型", type(ga_list))
         print("emlist\n", em_list)
+        key_em=db.get_tbColTitle_data("gasound","tab_19_magn")
+        key_ga=db.get_tbColTitle_data("gasound","tab_19_sound")
+
+        print("key_em",key_em)
+
+        keyStr = ','.join(key)
+        print("122", keyStr)
+        result = jsfy.jsonfy(key, result)
         # return (em_list,ga_list)
 
         # return ("okk")
+        return ()
     except:
         db.close_connect()
         return "fail"
@@ -120,17 +136,17 @@ def seismicL_classify(magnitude):
             print("0~3.4")
             result = db.get_scope_data("eqlst", "*", "Magnitude", "<=3.4")
             return result
-        if magnitude >= 3.4 and magnitude <= 4.5:
+        elif magnitude >= 3.4 and magnitude <= 4.5:
             print("3.4~4.5")
-            result = db.get_scope_data("eqlst", "*", "Magnitude", "<=4.5")
+            result = db.get_youDefine_fondata("eqlst", "*", "Magnitude>=3.6 && Magnitude<=4.5")
             return result
-        if magnitude >= 4.6 and magnitude <= 5.5:
+        elif magnitude >= 4.6 and magnitude <= 5.5:
             print("4.6~5.5")
-            result = db.get_scope_data("eqlst", "*", "Magnitude", "<=5.5")
+            result = db.get_youDefine_fondata("eqlst", "*", "Magnitude>=4.6 && Magnitude<=5.5")
             return result
-        if magnitude >= 5.6 and magnitude < 8.0:
+        elif magnitude >= 5.6 and magnitude < 8.0:
             print("5.6~8.0")
-            result = db.get_scope_data("eqlst", "*", "Magnitude", "<=8.0")
+            result = db.get_youDefine_fondata("eqlst", "*", "Magnitude>=5.6 && Magnitude<=8.0")
             return result
     except:
         db.close_connect()
@@ -146,17 +162,18 @@ def classify_magnitude():
         #     调用函数对数据进行分类
         magnitude = float(magnitude)
         result = seismicL_classify(magnitude)
-        key = list(range(0, len(result)))
+        key = db.get_tbColTitle_data("gasound","eqlst")
+        print("key",key)
+
         print("地震等级分类，处理完毕", result)
         if result == 0:
             return json.dumps({"statment": "未找到第%s地震相关信息" % magnitude})
 
-        res = dict(zip(key, list(result)))
-        res = json.dumps(res)
+        res = jsfy.jsonfy(key,result)
         return res
     except:
         db.close_connect()
-        return "fail"
+        return json.dumps({"statment": "程序执行中断" })
 
 
 #
@@ -170,21 +187,33 @@ def location_classify():
     使用模糊查询
     :return:
     '''
-
+    # 获取用户输入的地区是哪一个地区
     # max_mag = -1
     # eq_area = -1
     # 不好写
-    pass
+    # 你正在查看地区划分预测所有影响因子
 
-
-
-    print("你正在查看地区划分预测所有影响因子")
-    return land_location()
+    print("开始执行地区影响因子查询")
+    area=request.form.get("area")
+    # 从表名塔台id，来决定地区经纬度
+    result=land_location(area)
+    print(result)
+    if result==0:
+        return json.dumps({"statment":"未找到信息"})
+    print("你正在查看指定塔台地区划分预测所有影响因子")
+    return result
 def ealst_locClassify():
     '''
     地震目录，地区分化
     :return:
     '''
+    # 需要实现分页查询
+    # 全部表
+
+    # 需要对指定列进行返回
+    #
+
+
 
 
 
