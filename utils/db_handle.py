@@ -48,8 +48,16 @@ class DB(object):
 
         return res
 
-
-
+    # 获取一个表中的指定列的数据
+    def get_tragColumn_data_list(self,columnTitle,dbtablename):
+        """获取一个表所有的对象数据"""
+        sqlStr = "select %s from %s"%(columnTitle,dbtablename)
+        self.cur.execute(sqlStr)
+        data = self.cur.fetchall()
+        # 转成一个list
+        apiList = list(data)
+        print("apiList",apiList)
+        return apiList
 
     def get_api_list(self,dbtablename):
         """获取一个表所有的对象数据"""
@@ -90,14 +98,15 @@ class DB(object):
         print("插入完成")
         self.conn.commit()
         # self.close_connect()
-    def get_titleTarg_search(self,dbtablename,select_data):
+    def get_titleTarg_search(self,dbtablename,select_title,select_dataTitle,select_data):
         '''
         寻找指定表头数据的值
         :param dbtablename:
         :param select_data:
         :return:
         '''
-        sqlStr="select id, isdeny, islogin, password, user_name from eta_user where user_name='aFang'"
+        # sqlStr="select id, isdeny, islogin, password, user_name from eta_user where user_name='aFang'"
+        sqlStr="select %s from %s where %s='aFang'"%(dbtablename,select_title,select_dataTitle,select_data)
         print("数据库管理员正在查找数据\n",sqlStr)
         self.cur.execute(sqlStr)
         if self.cur.execute(sqlStr)==0:
@@ -193,12 +202,16 @@ class DB(object):
     def get_all_tablename(self,dbname):
         print("开始查询所有数据库的表名")
         sqlStr="SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = '%s'"%dbname
-        # print("查询表名语句",sqlStr)
+        print("查询表名语句",sqlStr)
         self.cur.execute(sqlStr)
-        get_all_tablename=list(self.cur.fetchone())
+        get_all_tablename=list(self.cur.fetchall())
         # get_all_tablename[0] for get_all_tablename in self.cursor.fetchall()
-        print("查询数据表完毕")
-        return get_all_tablename
+        res=[]
+        for i in get_all_tablename:
+            # print(i)
+            res.append(i[0])
+        print("打印数据",res)
+        return res
 
     def update_store_data(self,dbtablename,column_title,set_value ,id):
         # 修改某个指定数据的值

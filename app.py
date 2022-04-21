@@ -14,6 +14,7 @@ from utils.jsonfyDbtable import *
 # connectdb()
 db=DB()
 dbname="gasound"
+jsfy=jsonfyDbtable()
 
 def file(dbname,tablename):
     try:
@@ -51,44 +52,7 @@ def file(dbname,tablename):
         db.close_connect()
         return 'fail'
 
-def dbselctAllt(tablename):
-    # 函数返回值取参数，不是返回
-    try:
-        heads = file(dbname, tablename)[0]
-        list_heads = []
-        for i in heads:
-            list_heads.append(i[0])
-        # print("/n")
-        # print("key",list_heads)
-        # 列表是不是转json方便一些
-        # 表名当json键，然后列值做jason值
 
-        tablename = str(tablename)
-        sqlall = "SELECT * FROM " + tablename + ";"
-        print(sqlall)
-        db.cur.execute(sqlall)
-        result = db.cur.fetchall()
-        result = str(result)
-        # 变为json ，直接获取表头
-        allResult = []
-
-        # 写一个二维列表
-        # list_heads=list(heads)
-        # 好像不对
-        list_values = file(dbname, tablename)[1]
-        print("value", list_values)
-        dict1 = dict(zip(list_heads, list_values))
-        print(len(dict1))
-        # dict1=jsonify(allResult)
-        dballData = json.dumps(dict1)
-
-        # db.close_connect()
-        # return (result)
-        return dballData
-    except:
-        # 发生错误时回滚
-        db.close_connect()
-        return 'fail'
 
 
 # dbselctAllt("tab_24_magn")
@@ -97,28 +61,107 @@ app = Flask(__name__)
 
 CORS(app, resources=r'/*')
 
-@app.route("/get_allTable_data", methods=["POST"])
-def allnum():
-    tablename = request.form.get("tableNames")
-    print("tablename",tablename)
-    return dbselctAllt(tablename)
+@app.route("/get_allTable_name", methods=["GET"])
+def get_allTable_name():
+    # tablename = request.form.get("tableNames")
+    result=db.get_all_tablename("gasound")
+    return tuple(result)
+@app.route("/get_allTable_data", methods=["GET"])
+def get_allTable_data():
+    tableClass=request.args.get("tableClass")
+    print(tableClass)
+    print(type(tableClass))
+    allTableName=db.get_all_tablename("gasound")
+    print("allTableName",allTableName)
+    sound_key=["StationID","sound_var","sound_abs_max","sound_abs_mean","sound_abs_max_top5p","sound_mean"]
+    magn_key=["StationID","magn_var","magn_kurt","magn_abs_max","magn_abs_mean","magn_abs_max_top5p","magn_variance_frequency"]
+# 判断给的是那种数据
+    emTable_dataList=[]
+    gaTable_titleList=[]
+    emTable_titleList=[]
+    gaTable_dataList=[]
+    if tableClass=="em":
+        # em为地磁
+        for i in allTableName:
+            if "magn" in i:
+                emTable_titleList.append(i)
+                data=getTabe_data(i,magn_key)
+                print("data\n",data)
+                emTable_dataList.append(data)
+            else:
+                continue
+        print("len",len(emTable_dataList))
+        result=jsfy.jsonfy(magn_key,emTable_dataList)
+        # print("result\n",result)
+        return result
+
+    elif tableClass=="ga":
+        # ga为地声
+        for i in allTableName:
+            if "sound" in i:
+                gaTable_titleList.append(i)
+                data=getTabe_data(i,sound_key)
+                gaTable_dataList.append(data)
+            else:
+                continue
+        result=jsfy.jsonfy(sound_key,gaTable_dataList)
+        print("result\n",result)
+        return result
+    else:
+        print("啥也不是")
+        return (json.dumps({"message":"其他暂不提供"}))
+
 @app.route("/optData", methods=["POST"])
 def optData():
     print("test")
     return "1111"
 # 接口不通的时候跑一下
+def getTabe_data(tablename,targ_key):
+    '''
+    :return:
+    '''
+    # 对targ key处理
+    targ_keyStr = ','.join(targ_key)
+    # print("116", targ_keyStr)
+    data=db.get_tragColumn_data_list(targ_keyStr,tablename)
 
-@app.route("/tablename/get_table_data", methods=["POST"])
-def gettablename():
+    # print("result",result)
+    return data
+
+
+
+
+@app.route("/tablename/get_table_data", methods=["GET"])
+
+def get_table_data():
     try:
-        tableNames = request.form.get("tablename")
-        table_data = db.get_api_list(tableNames)
+        tableNames = request.args.get("tableName")
+        tableClass=request.args.get("tableClass")
+        sound_key=["StationID","sound_var","sound_abs_max","sound_abs_mean","sound_abs_max_top5p","sound_mean"]
+        magn_key=["StationID","magn_var","magn_kurt","magn_abs_max","magn_abs_mean","magn_abs_max_top5p","magn_variance_frequency"]
+        # 判断给的是那种数据
+        if tableClass=="em":
+            # em为地磁
+            data=getTabe_data(tableNames,magn_key)
+            result=jsfy.jsonfy(magn_key,data)
+            return result
+        elif tableClass=="ga":
+            # ga为地声
+            data=getTabe_data(tableNames,sound_key)
+            result=jsfy.jsonfy(sound_key,data)
+            return result
+        else:
+            return "default tableclass error"
+
+        # try:
+
+                # table_data = db.get_api_list(tableNames)
         # new一个格式化jason对象
-        jsfy = jsonfyDbtable()
-        tableNames = jsfy.jsonfy(range(0, len(table_data)), table_data)
-        print(range(0, len(tableNames)))
-        print(tableNames)
-        return tableNames
+        # jsfy = jsonfyDbtable()
+        # tableNames = jsfy.jsonfy(range(0, len(table_data)), table_data)
+        # print(range(0, len(tableNames)))
+        # print(tableNames)
+        # return tableNames
     except:
         db.close_connect()
         return "fail"

@@ -36,7 +36,14 @@ def searchEqlisInfo():
         return json.dumps({"statment":"未找到信息"})
     # key=list(range(0,len(result)))
     return result
-def land_location(area):
+# def emLand_location(area):
+#
+#
+#
+#     pass
+# def gaLand_location(area):
+#     pass
+def land_location(area,class_gaOrem):
     """
     对地震通过经纬度进行划分，划分为8个地震带
     :param longtitude:
@@ -109,16 +116,35 @@ def land_location(area):
         print("emlist\n", em_list)
         key_em=db.get_tbColTitle_data("gasound","tab_19_magn")
         key_ga=db.get_tbColTitle_data("gasound","tab_19_sound")
+        print(key_em,key_ga)
+        if class_gaOrem=="地磁":
+            '''
+            地磁是em
+            '''
+            print(class_gaOrem,"class_gaOrem\n")
+            print(key_em)
+            key=key_em
+            #需要返回这个表中的八个数据
+
+            # result_Value=db.get_titleTarg_search()
+        else:
+            print(class_gaOrem,"class_gaOrga\n")
+            print(key_ga)
+
+
+
+
 
         print("key_em",key_em)
 
+
         keyStr = ','.join(key)
         print("122", keyStr)
-        result = jsfy.jsonfy(key, result)
+        # result = jsfy.jsonfy(key, result)
         # return (em_list,ga_list)
 
         # return ("okk")
-        return ()
+        return "123344444142"
     except:
         db.close_connect()
         return "fail"
@@ -194,9 +220,11 @@ def location_classify():
     # 你正在查看地区划分预测所有影响因子
 
     print("开始执行地区影响因子查询")
-    area=request.form.get("area")
+    area=request.args.get("area")
+    # 获取是em还是gm
+    class_gaOrem=request.args.get("em_or_gm")
     # 从表名塔台id，来决定地区经纬度
-    result=land_location(area)
+    result=land_location(area,class_gaOrem)
     print(result)
     if result==0:
         return json.dumps({"statment":"未找到信息"})
