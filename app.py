@@ -113,15 +113,15 @@ app = Flask(__name__)
 
 CORS(app, resources=r'/*')
 
-@app.route("/get_allTable_name", methods=["GET"])
-def get_allTable_name():
-    # tablename = request.form.get("tableNames")
-    result=db.get_all_tablename("gasound")
-    return jsfy.l1_tol1(range(0,len(result)),result)
-# @app.route("/get_allTable_data", methods=["GET"])
-# def get_allTable_messageApi():
-#         tableClass=request.args.get("tableClass")
-#         return get_allTable_data(tableClass)
+# @app.route("/get_allTable_name", methods=["GET"])
+# def get_allTable_name():
+#     tablename = request.form.get("tableNames")
+#     result=db.get_all_tablename("gasound")
+#     return jsfy.l1_tol1(range(0,len(result)),result)
+@app.route("/get_allTable_data", methods=["GET"])
+def get_allTable_messageApi():
+        tableClass=request.args.get("tableClass")
+        return get_allTable_data(tableClass)
 
 
 @app.route("/optData", methods=["POST"])
@@ -145,7 +145,6 @@ def getTabe_data(tablename,targ_key):
 
 
 @app.route("/tablename/get_table_data", methods=["GET"])
-
 def get_table_data():
     resultList=[]
     tableNames = request.args.get("tableName")
@@ -204,5 +203,6 @@ def get_table_data():
     #     return "fail"
 
 if __name__=='__main__':
-    app.run(debug=True, port=5555, host="localhost")
+    app.run(debug=True, port=5000, host="localhost")
     CORS(app)
+

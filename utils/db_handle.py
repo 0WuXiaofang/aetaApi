@@ -33,6 +33,17 @@ class DB(object):
         self.cur.close()
         # 连接对象关闭
         self.conn.close()
+    #     左右连接查询
+    def contactLocation_search(self,Longitude,Latitude):
+
+        sqlStr="select stationinfo.StationID,stationinfo.Title,predict_t.* from stationinfo inner join predict_t on predict_t.Longitude = stationinfo.Longitude AND predict_t.Latitude=stationinfo.Latitude WHERE instr(stationinfo.Longitude,'%s')AND instr(stationinfo.Latitude,'%s');"%(Longitude,Latitude)
+        print(sqlStr)
+        self.cur.execute(sqlStr)
+        res = self.cur.fetchall()
+        return res
+
+
+
     def get_youDefine_fondata(self,dbtablename,selectTarge,defineTarge):
         '''
         获取指定限制语句的指定数据
