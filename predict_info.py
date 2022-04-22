@@ -12,10 +12,14 @@ db=DB()
 jsfy=jsonfyDbtable()
 # 去封装一个模糊查询
 #调用模糊查询的方法
+# 左右连接，连接两个表，staioninfo 与predict_t连接做经纬度查询
+
 app = Flask(__name__)
 CORS(app, resources=r'/*')
 @app.route('/predict/Location_search',methods=["POST"])
 def get_alikeWord():
+
+
     try:
         '''
         通过经纬度查询地理位置
@@ -23,9 +27,12 @@ def get_alikeWord():
         '''
         Latitude = request.args.get("Latitude")
         Longitude = request.args.get("Longitude")
+        # 需要做连表查询
+
+        search_result=db.contactLocation_search(Longitude,Latitude)
         search_List=["Latitude","Longitude"]
-        search_ListStr="Latitude=%d&&Longitude=%d"%(Latitude,Longitude)
-        search_result =db.get_youDefine_fondata("Location","staioninfo",search_ListStr)
+        # search_ListStr="Latitude=%d&&Longitude=%d"%(Latitude,Longitude)
+        # search_result =db.get_youDefine_fondata("Location","staioninfo",search_ListStr)
         search_result = jsfy.jsonfy(search_List, search_result)
         print(search_result)
         return search_result
