@@ -49,7 +49,15 @@ class DB(object):
         self.cur.execute(sqlStr)
         res = self.cur.fetchall()
         return res
+    #联表做范围查询
+    def contactLocation_magnClassifySearch(self,lim_scope):
+        # sqlStr = "select "+targ_data+" from "+dbtablename+" WHERE " + column_title + lim_scope
 
+        sqlStr="select stationinfo.Title,predict_t.* from stationinfo inner join predict_t on stationinfo.StationID=predict_t.StationID WHERE %s" % (lim_scope)
+        print(sqlStr)
+        self.cur.execute(sqlStr)
+        res = self.cur.fetchall()
+        return res
 
 
 
