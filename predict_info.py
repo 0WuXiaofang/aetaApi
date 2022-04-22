@@ -16,21 +16,35 @@ jsfy=jsonfyDbtable()
 
 app = Flask(__name__)
 CORS(app, resources=r'/*')
-@app.route('/predict/Location_search',methods=["POST"])
-def get_alikeWord():
-
+@app.route('/predict/get_locationKeywordSearch',methods=["GET"])
+def get_keywordSearch():
+    '''地区关键字查询
+    '''
+    # try:
+    #
+    # except:
+    #     db.close_connect()
+    #     return "fail"
+    columnValue = request.args.get("Location")
+    search_result=db.contactLocation_alikeSearch("Title",columnValue)
+    search_List=["Title","id","class_name","StationID","magn_level","Longitude","Latitude"]
+    kSearch_result = jsfy.jsonfy(search_List,search_result)
+    print(kSearch_result)
+    return kSearch_result
+@app.route('/predict/StationID_search',methods=["GET"])
+def get_StationID_search_data():
+    '''
+通过站台查询地理位置
+:return:
+'''
+    # Latitude = request.args.get("Latitude")
+    # Longitude = request.args.get("Longitude")
 
     try:
-        '''
-        通过经纬度查询地理位置
-        :return:
-        '''
-        Latitude = request.args.get("Latitude")
-        Longitude = request.args.get("Longitude")
-        # 需要做连表查询
-
-        search_result=db.contactLocation_search(Longitude,Latitude)
-        search_List=["Latitude","Longitude"]
+        StationID=int(request.args.get("StationID"))
+    # 需要做连表查询
+        search_result=db.contactLocation_search("stationinfo","StationID",StationID)
+        search_List=["Title","id","class_name","StationID","magn_level","Longitude","Latitude"]
         # search_ListStr="Latitude=%d&&Longitude=%d"%(Latitude,Longitude)
         # search_result =db.get_youDefine_fondata("Location","staioninfo",search_ListStr)
         search_result = jsfy.jsonfy(search_List, search_result)
@@ -39,24 +53,63 @@ def get_alikeWord():
     except:
         db.close_connect()
         return "fail"
-
-def get_keywordSearch():
-    '''关键字查询
+#     通过地震震级查询
+@app.route('/predict/magnLevel_search',methods=["GET"])
+def get_magnLevel_search_data():
     '''
+通过站台查询地理位置
+:return:
+'''
+    # Latitude = request.args.get("Latitude")
+    # Longitude = request.args.get("Longitude")
+    #
     try:
-        columnTitle = request.form.get("columnTitle")
-        columnValue = request.form.get("keyWord")
-        kSearch_result = db.get_api_id("predict_table", columnTitle, columnValue)
-        kSearch_result = jsfy.jsonfy(kSearch_result)
-        print(kSearch_result)
-        return kSearch_result
+        magn_level=request.args.get("magn_level")
+    # 需要做连表查询
+        search_result=db.contactLocation_search("predict_t","magn_level",magn_level)
+        search_List=["Title","id","class_name","StationID","magn_level","Longitude","Latitude"]
+        # search_ListStr="Latitude=%d&&Longitude=%d"%(Latitude,Longitude)
+        # search_result =db.get_youDefine_fondata("Location","staioninfo",search_ListStr)
+        search_result = jsfy.jsonfy(search_List, search_result)
+        print(search_result)
+        return search_result
+
     except:
         db.close_connect()
         return "fail"
+
+# 根据经纬度范围片区划分
+#     通过地震震级查询
+@app.route('/predict/className_search',methods=["GET"])
+def get_className_search_data():
+    '''
+通过站台查询地理位置
+:return:
+'''
+    # Latitude = request.args.get("Latitude")
+    # Longitude = request.args.get("Longitude")
+    #
+    try:
+        class_name=request.args.get("class_name")
+        # 需要做连表查询
+        search_result=db.contactLocation_search("predict_t","class_name",class_name)
+        search_List=["Title","id","class_name","StationID","magn_level","Longitude","Latitude"]
+        # search_ListStr="Latitude=%d&&Longitude=%d"%(Latitude,Longitude)
+        # search_result =db.get_youDefine_fondata("Location","staioninfo",search_ListStr)
+        search_result = jsfy.jsonfy(search_List, search_result)
+        print(search_result)
+        return search_result
+
+    except:
+        db.close_connect()
+        return "fail"
+
+
+
 @app.route('/predict/get_predictTable_alldata',methods=["GET"])
 def get_predictTable_alldata():
     # 地震表头
-    predictTable_title=["id","class_name","magn_level","Longitude","Latitude"]
+    predictTable_title=["id","class_name","StationID","magn_level","Longitude","Latitude"]
     '''
     获取预测表所有信息
     :return:

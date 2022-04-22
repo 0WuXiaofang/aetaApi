@@ -34,13 +34,23 @@ class DB(object):
         # 连接对象关闭
         self.conn.close()
     #     左右连接查询
-    def contactLocation_search(self,Longitude,Latitude):
+    def contactLocation_search(self,targTable_name,searchTarg,targData):
 
-        sqlStr="select stationinfo.StationID,stationinfo.Title,predict_t.* from stationinfo inner join predict_t on predict_t.Longitude = stationinfo.Longitude AND predict_t.Latitude=stationinfo.Latitude WHERE instr(stationinfo.Longitude,'%s')AND instr(stationinfo.Latitude,'%s');"%(Longitude,Latitude)
+        sqlStr="select stationinfo.Title,predict_t.* from stationinfo inner join predict_t on stationinfo.StationID=predict_t.StationID WHERE %s.%s=%s;"%(targTable_name,searchTarg,targData)
         print(sqlStr)
         self.cur.execute(sqlStr)
         res = self.cur.fetchall()
         return res
+    #联表模糊查询
+    def contactLocation_alikeSearch(self,searchTarg,targData):
+
+        sqlStr="select stationinfo.Title,predict_t.* from stationinfo inner join predict_t on stationinfo.StationID=predict_t.StationID WHERE stationinfo."+searchTarg+" LIKE '%"+targData+"%'";
+        print(sqlStr)
+        self.cur.execute(sqlStr)
+        res = self.cur.fetchall()
+        return res
+
+
 
 
 
@@ -118,7 +128,7 @@ class DB(object):
         :return:
         '''
         # sqlStr="select id, isdeny, islogin, password, user_name from eta_user where user_name='aFang'"
-        sqlStr="select %s from %s where %s='aFang'"%(dbtablename,select_title,select_dataTitle,select_data)
+        sqlStr="select %s from %s where %s='%s'"%(dbtablename,select_title,select_dataTitle,select_data)
         print("数据库管理员正在查找数据\n",sqlStr)
         self.cur.execute(sqlStr)
         if self.cur.execute(sqlStr)==0:
