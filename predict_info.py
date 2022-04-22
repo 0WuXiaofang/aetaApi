@@ -14,16 +14,19 @@ jsfy=jsonfyDbtable()
 #调用模糊查询的方法
 app = Flask(__name__)
 CORS(app, resources=r'/*')
-@app.route('/predict/alike_search',methods=["POST"])
+@app.route('/predict/Location_search',methods=["POST"])
 def get_alikeWord():
     try:
         '''
-        模糊查询，通过地理位置
+        通过经纬度查询地理位置
         :return:
         '''
-        alikeLocation = request.form.get("location_name")
-        search_result = db.alike_get_data("predict_table", "Location", alikeLocation)
-        search_result = jsfy.jsonfy(alikeLocation, search_result)
+        Latitude = request.args.get("Latitude")
+        Longitude = request.args.get("Longitude")
+        search_List=["Latitude","Longitude"]
+        search_ListStr="Latitude=%d&&Longitude=%d"%(Latitude,Longitude)
+        search_result =db.get_youDefine_fondata("Location","staioninfo",search_ListStr)
+        search_result = jsfy.jsonfy(search_List, search_result)
         print(search_result)
         return search_result
     except:
@@ -43,20 +46,25 @@ def get_keywordSearch():
     except:
         db.close_connect()
         return "fail"
-
+@app.route('/predict/get_predictTable_alldata',methods=["GET"])
 def get_predictTable_alldata():
+    # 地震表头
+    predictTable_title=["id","class_name","magn_level","Longitude","Latitude"]
     '''
     获取预测表所有信息
     :return:
     '''
-    try:
-        predictTable_data = db.get_api_list("predict_table")
-        predictTable_data = jsfy.jsonfy(predictTable_data)
-        print("preallT", predictTable_data)
-        return predictTable_data
-    except:
-        db.close_connect()
-        return "fail"
+    # searchStr=','.join(predictTable_data)
+    targ_keyStr = ','.join(predictTable_title)
+    predictTable_data = db.get_tragColumn_data_list(targ_keyStr,"predict_t")
+    predictTable_data = jsfy.jsonfy(predictTable_title,predictTable_data)
+    print("preallT", predictTable_data)
+    return predictTable_data
+    # try:
+
+    # except:
+    #     db.close_connect()
+    #     return "fail"
 
 
 def magnScope_search():
