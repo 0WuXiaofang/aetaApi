@@ -52,11 +52,12 @@ class DB(object):
     def get_tragColumn_data_list(self,columnTitle,dbtablename):
         """获取一个表所有的对象数据"""
         sqlStr = "select %s from %s"%(columnTitle,dbtablename)
+        print("gettarg_tabledata",sqlStr)
         self.cur.execute(sqlStr)
         data = self.cur.fetchall()
         # 转成一个list
         apiList = list(data)
-        print("apiList",apiList)
+        # print("apiList",apiList)
         return apiList
 
     def get_api_list(self,dbtablename):

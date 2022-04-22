@@ -6,6 +6,7 @@ class jsonfyDbtable(object):
 
     def jsonfy(self,key_data,twoDim_array):
     # #获取已经处理好的数据
+    # 一维对二维
 
         '''将数据转为json
         '''
@@ -13,7 +14,7 @@ class jsonfyDbtable(object):
             list_json=[dict(zip(key_data,item)) for item in twoDim_array]
             # indent缩进量，ensure_ascii=False支持中文
             str_json=json.dumps(list_json,indent=2, ensure_ascii=False)
-            print(str_json)
+            # print(str_json)
             return str_json
         except:
             return "jsonfy_error"

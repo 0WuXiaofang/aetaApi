@@ -56,26 +56,16 @@ def file(dbname,tablename):
 
 
 # dbselctAllt("tab_24_magn")
+def get_allTable_data(tableClass):
 
-app = Flask(__name__)
-
-CORS(app, resources=r'/*')
-
-@app.route("/get_allTable_name", methods=["GET"])
-def get_allTable_name():
-    # tablename = request.form.get("tableNames")
-    result=db.get_all_tablename("gasound")
-    return tuple(result)
-@app.route("/get_allTable_data", methods=["GET"])
-def get_allTable_data():
-    tableClass=request.args.get("tableClass")
     print(tableClass)
     print(type(tableClass))
     allTableName=db.get_all_tablename("gasound")
     print("allTableName",allTableName)
     sound_key=["StationID","sound_var","sound_abs_max","sound_abs_mean","sound_abs_max_top5p","sound_mean"]
     magn_key=["StationID","magn_var","magn_kurt","magn_abs_max","magn_abs_mean","magn_abs_max_top5p","magn_variance_frequency"]
-# 判断给的是那种数据
+    # 判断给的是那种数据
+    dataList=[]
     emTable_dataList=[]
     gaTable_titleList=[]
     emTable_titleList=[]
@@ -86,13 +76,15 @@ def get_allTable_data():
             if "magn" in i:
                 emTable_titleList.append(i)
                 data=getTabe_data(i,magn_key)
-                print("data\n",data)
-                emTable_dataList.append(data)
+                # print("data\n",data)
+                for everData in data:
+                    emTable_dataList.append(everData)
             else:
                 continue
         print("len",len(emTable_dataList))
         result=jsfy.jsonfy(magn_key,emTable_dataList)
-        # print("result\n",result)
+        print("result\n",result)
+
         return result
 
     elif tableClass=="ga":
@@ -101,15 +93,36 @@ def get_allTable_data():
             if "sound" in i:
                 gaTable_titleList.append(i)
                 data=getTabe_data(i,sound_key)
-                gaTable_dataList.append(data)
+                # print("data\n",data)
+                for everData in data:
+                    gaTable_dataList.append(everData)
+            #         化为一维
             else:
                 continue
+        print("len",len(gaTable_dataList))
         result=jsfy.jsonfy(sound_key,gaTable_dataList)
-        print("result\n",result)
+        print("\n,\n,",result)
         return result
+
     else:
         print("啥也不是")
         return (json.dumps({"message":"其他暂不提供"}))
+
+
+app = Flask(__name__)
+
+CORS(app, resources=r'/*')
+
+@app.route("/get_allTable_name", methods=["GET"])
+def get_allTable_name():
+    # tablename = request.form.get("tableNames")
+    result=db.get_all_tablename("gasound")
+    return jsfy.l1_tol1(range(0,len(result)),result)
+# @app.route("/get_allTable_data", methods=["GET"])
+# def get_allTable_messageApi():
+#         tableClass=request.args.get("tableClass")
+#         return get_allTable_data(tableClass)
+
 
 @app.route("/optData", methods=["POST"])
 def optData():
@@ -134,37 +147,61 @@ def getTabe_data(tablename,targ_key):
 @app.route("/tablename/get_table_data", methods=["GET"])
 
 def get_table_data():
-    try:
-        tableNames = request.args.get("tableName")
-        tableClass=request.args.get("tableClass")
-        sound_key=["StationID","sound_var","sound_abs_max","sound_abs_mean","sound_abs_max_top5p","sound_mean"]
-        magn_key=["StationID","magn_var","magn_kurt","magn_abs_max","magn_abs_mean","magn_abs_max_top5p","magn_variance_frequency"]
-        # 判断给的是那种数据
-        if tableClass=="em":
-            # em为地磁
-            data=getTabe_data(tableNames,magn_key)
-            result=jsfy.jsonfy(magn_key,data)
-            return result
-        elif tableClass=="ga":
-            # ga为地声
-            data=getTabe_data(tableNames,sound_key)
-            result=jsfy.jsonfy(sound_key,data)
-            return result
-        else:
-            return "default tableclass error"
+    resultList=[]
+    tableNames = request.args.get("tableName")
+    tableClass=request.args.get("tableClass")
+    sound_key=["StationID","sound_var","sound_abs_max","sound_abs_mean","sound_abs_max_top5p","sound_mean"]
+    magn_key=["StationID","magn_var","magn_kurt","magn_abs_max","magn_abs_mean","magn_abs_max_top5p","magn_variance_frequency"]
+    # 判断给的是那种数据
+    if tableClass=="em":
+        # em为地磁
+        data=getTabe_data(tableNames,magn_key)
+        for i in data:
+            result=jsfy.jsonfy(magn_key,i)
+            resultList.append(result)
 
-        # try:
+        return data
+    elif tableClass=="ga":
+        # ga为地声
+        data=getTabe_data(tableNames,sound_key)
+        print("151data",data)
+        result=jsfy.jsonfy(sound_key,data)
+        return result
+    else:
+        return "default tableclass error"
 
-                # table_data = db.get_api_list(tableNames)
-        # new一个格式化jason对象
-        # jsfy = jsonfyDbtable()
-        # tableNames = jsfy.jsonfy(range(0, len(table_data)), table_data)
-        # print(range(0, len(tableNames)))
-        # print(tableNames)
-        # return tableNames
-    except:
-        db.close_connect()
-        return "fail"
+# try:
+    #     tableNames = request.args.get("tableName")
+    #     tableClass=request.args.get("tableClass")
+    #     sound_key=["StationID","sound_var","sound_abs_max","sound_abs_mean","sound_abs_max_top5p","sound_mean"]
+    #     magn_key=["StationID","magn_var","magn_kurt","magn_abs_max","magn_abs_mean","magn_abs_max_top5p","magn_variance_frequency"]
+    #     # 判断给的是那种数据
+    #     if tableClass=="em":
+    #         # em为地磁
+    #         data=getTabe_data(tableNames,magn_key)
+    #         result=jsfy.jsonfy(magn_key,data)
+    #         return result
+    #     elif tableClass=="ga":
+    #         # ga为地声
+    #         data=getTabe_data(tableNames,sound_key)
+    #         print("151data",data)
+    #         result=jsfy.jsonfy(sound_key,data)
+    #         return result
+    #     else:
+    #         return "default tableclass error"
+    #
+    #     # try:
+    #
+    #             # table_data = db.get_api_list(tableNames)
+    #     # new一个格式化jason对象
+    #     # jsfy = jsonfyDbtable()
+    #     # tableNames = jsfy.jsonfy(range(0, len(table_data)), table_data)
+    #     # print(range(0, len(tableNames)))
+    #     # print(tableNames)
+    #     # return tableNames
+    # except:
+    #     db.close_connect()
+    #     return "fail"
 
 if __name__=='__main__':
     app.run(debug=True, port=5555, host="localhost")
