@@ -152,22 +152,28 @@ def get_table_data():
     sound_key=["StationID","sound_var","sound_abs_max","sound_abs_mean","sound_abs_max_top5p","sound_mean"]
     magn_key=["StationID","magn_var","magn_kurt","magn_abs_max","magn_abs_mean","magn_abs_max_top5p","magn_variance_frequency"]
     # 判断给的是那种数据
-    if tableClass=="em":
+    try:
+        if tableClass=="em":
         # em为地磁
-        data=getTabe_data(tableNames,magn_key)
-        for i in data:
-            result=jsfy.jsonfy(magn_key,i)
-            resultList.append(result)
+            data=getTabe_data(tableNames,magn_key)
+            # for i in data:
+            #
+            #     resultList.append(result)
+            result=jsfy.jsonfy(magn_key,data)
 
-        return data
-    elif tableClass=="ga":
-        # ga为地声
-        data=getTabe_data(tableNames,sound_key)
-        print("151data",data)
-        result=jsfy.jsonfy(sound_key,data)
-        return result
-    else:
-        return "default tableclass error"
+            return result
+        elif tableClass=="ga":
+            # ga为地声
+            data=getTabe_data(tableNames,sound_key)
+            print("151data",data)
+            result=jsfy.jsonfy(sound_key,data)
+            return result
+        else:
+            return "default tableclass error"
+    except:
+        db.close_connect()
+        return "fail"
+
 
 # try:
     #     tableNames = request.args.get("tableName")
