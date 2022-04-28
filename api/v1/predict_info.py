@@ -4,10 +4,16 @@ from werkzeug.utils import redirect
 from flask_cors import  CORS
 from utils.db_handle import *
 from utils.jsonfyDbtable import *
+from libs.redprint import Redprint
+
 #自己封装了一个，这个确实没啥用 from dbConnect import *
 import pymysql
 import json
 # 实例化数据库对象
+
+
+api = Redprint('earthquakePredict')
+
 db=DB()
 jsfy=jsonfyDbtable()
 # 去封装一个模糊查询
@@ -42,10 +48,8 @@ jsfy=jsonfyDbtable()
 #         db.close_connect()
 #         return "fail"
 
-app = Flask(__name__)
-CORS(app, resources=r'/*')
 # 联表做范围查询
-@app.route("/predict/classify_magnitude", methods=["GET"])
+@api.route("/predict/classify_magnitude", methods=["GET"])
 def predict_classify_magnitude():
 
     try:
@@ -72,7 +76,7 @@ def predict_classify_magnitude():
         return json.dumps({"statment": "程序执行中断" })
 
 
-@app.route('/predict/get_locationKeywordSearch',methods=["GET"])
+@api.route('/predict/get_locationKeywordSearch',methods=["GET"])
 def get_keywordSearch():
     '''地区关键字查询
     '''
@@ -88,7 +92,7 @@ def get_keywordSearch():
         db.close_connect()
         return "fail"
 
-@app.route('/predict/StationID_search',methods=["GET"])
+@api.route('/predict/StationID_search',methods=["GET"])
 def get_StationID_search_data():
     '''
 通过站台查询地理位置
@@ -111,7 +115,7 @@ def get_StationID_search_data():
         db.close_connect()
         return "fail"
 #     通过地震震级查询
-@app.route('/predict/magnLevel_search',methods=["GET"])
+@api.route('/predict/magnLevel_search',methods=["GET"])
 def get_magnLevel_search_data():
     '''
 通过站台查询地理位置
@@ -137,7 +141,7 @@ def get_magnLevel_search_data():
 
 # 根据经纬度范围片区划分
 #     通过地震震级查询
-@app.route('/predict/className_search',methods=["GET"])
+@api.route('/predict/className_search',methods=["GET"])
 def get_className_search_data():
     '''
 通过站台查询地理位置
@@ -163,7 +167,7 @@ def get_className_search_data():
 
 
 
-@app.route('/predict/get_predictTable_alldata',methods=["GET"])
+@api.route('/predict/get_predictTable_alldata',methods=["GET"])
 def get_predictTable_alldata():
     # 地震表头
     predictTable_title=["id","class_name","StationID","magn_level","Longitude","Latitude"]
@@ -200,9 +204,6 @@ def magnScope_search():
         db.close_connect()
         return "fail"
 
-if __name__=='__main__':
-    app.run(debug=True, port=5000, host="localhost")
-    CORS(app)
 
 
 

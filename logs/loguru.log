@@ -1,0 +1,618 @@
+2021-10-09 12:55:36.984 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.11]秒
+2021-10-09 12:57:43.588 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.12]秒
+2021-10-09 13:03:01.842 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.13]秒
+2021-10-09 13:07:42.516 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.12]秒
+2021-10-09 13:08:14.459 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.11]秒
+2021-10-09 13:14:32.934 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.14]秒
+2021-10-09 13:54:39.964 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.12]秒
+2021-10-09 14:02:52.984 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.12]秒
+2021-10-09 14:03:32.246 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.19]秒
+2021-10-09 14:38:36.825 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.12]秒
+2021-10-09 14:39:23.389 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.13]秒
+2021-10-09 14:40:04.787 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.12]秒
+2021-10-09 14:43:10.974 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.12]秒
+2021-10-09 14:44:25.231 | INFO     | Include.libs.error:check:74 - [add_classification]运行时间:[0.12]秒
+2021-10-09 14:44:30.579 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.1]秒
+2021-10-09 14:45:38.077 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.11]秒
+2021-10-09 14:50:50.547 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.12]秒
+2021-10-09 15:00:07.503 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.15]秒
+2021-10-09 15:03:02.964 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.14]秒
+2021-10-09 15:03:53.706 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.21]秒
+2021-10-09 15:05:01.960 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.21]秒
+2021-10-09 15:16:15.161 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.18]秒
+2021-10-09 15:24:32.942 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.2]秒
+2021-10-09 15:27:42.479 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.19]秒
+2021-10-09 15:30:19.276 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.19]秒
+2021-10-09 15:31:01.203 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.18]秒
+2021-10-09 15:31:25.293 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.19]秒
+2021-10-09 15:43:54.168 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.2]秒
+2021-10-09 15:49:00.445 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.18]秒
+2021-10-09 15:50:05.218 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.17]秒
+2021-10-09 15:54:18.172 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.18]秒
+2021-10-09 15:55:27.923 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.2]秒
+2021-10-09 15:55:53.359 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.17]秒
+2021-10-09 15:56:21.508 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.21]秒
+2021-10-09 15:56:43.214 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.21]秒
+2021-10-09 15:57:37.224 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.18]秒
+2021-10-09 15:57:58.232 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.18]秒
+2021-10-09 15:58:30.447 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.2]秒
+2021-10-09 15:58:45.441 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.17]秒
+2021-10-09 15:58:56.236 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.22]秒
+2021-10-09 15:59:42.888 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.18]秒
+2021-10-09 16:01:05.238 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.17]秒
+2021-10-09 16:03:28.821 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.19]秒
+2021-10-09 16:03:50.429 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.19]秒
+2021-10-09 16:05:04.981 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.17]秒
+2021-10-09 16:05:24.723 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.21]秒
+2021-10-09 16:05:42.616 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.18]秒
+2021-10-09 16:09:09.337 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.21]秒
+2021-10-09 16:10:05.918 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.18]秒
+2021-10-09 16:13:18.187 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.19]秒
+2021-10-09 16:16:25.643 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.18]秒
+2021-10-09 16:16:55.871 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.17]秒
+2021-10-09 16:17:07.413 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.17]秒
+2021-10-09 16:18:02.476 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.19]秒
+2021-10-09 16:18:07.590 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.2]秒
+2021-10-09 16:18:48.800 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.2]秒
+2021-10-10 00:17:14.829 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.19]秒
+2021-10-10 00:17:24.913 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.2]秒
+2021-10-10 00:18:09.115 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.24]秒
+2021-10-10 00:19:37.129 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.19]秒
+2021-10-10 00:20:07.989 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.2]秒
+2021-10-10 00:23:32.535 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.19]秒
+2021-10-10 00:23:51.864 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.21]秒
+2021-10-10 00:24:57.282 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.19]秒
+2021-10-10 00:25:07.830 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.18]秒
+2021-10-10 00:27:14.688 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.22]秒
+2021-10-10 00:28:10.690 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.21]秒
+2021-10-10 00:28:56.051 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.22]秒
+2021-10-10 01:30:13.798 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.12]秒
+2021-10-10 01:31:07.377 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.12]秒
+2021-10-10 01:31:30.360 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.15]秒
+2021-10-10 01:32:43.318 | INFO     | Include.libs.error:check:74 - [add_column]运行时间:[0.14]秒
+2021-10-10 01:34:16.932 | INFO     | Include.libs.error:check:74 - [get_allmessage]运行时间:[0.12]秒
+2021-10-10 01:36:27.206 | INFO     | Include.libs.error:check:74 - [get_allmessage]运行时间:[0.13]秒
+2021-10-10 01:39:33.190 | INFO     | Include.libs.error:check:74 - [get_classification]运行时间:[0.2]秒
+2021-10-10 01:40:00.461 | INFO     | Include.libs.error:check:74 - [get_allmessage]运行时间:[0.12]秒
+2021-10-10 01:40:29.931 | INFO     | Include.libs.error:check:74 - [get_allmessage]运行时间:[0.13]秒
+2021-10-10 01:41:54.691 | INFO     | Include.libs.error:check:74 - [get_allmessage]运行时间:[0.16]秒
+2021-10-10 01:42:27.087 | INFO     | Include.libs.error:check:74 - [get_allmessage]运行时间:[0.13]秒
+2021-10-10 01:43:52.712 | INFO     | Include.libs.error:check:78 - 未知异常简要：'ConnMysql' object has no attribute 'get_messages'
+2021-10-10 01:43:52.718 | INFO     | Include.libs.error:check:85 - 未知异常具体：Traceback (most recent call last):
+  File "E:\Python Flask\YuWenHua_flask\Include\libs\error.py", line 70, in check
+    res = f(*args, **kwargs)
+  File "E:\Python Flask\YuWenHua_flask\Include\api\v1\yuwenhua.py", line 151, in get_allmessages
+    result = database.get_messages(subject_id)
+AttributeError: 'ConnMysql' object has no attribute 'get_messages'
+
+2021-10-10 01:44:34.904 | INFO     | Include.libs.error:check:74 - [get_allmessage]运行时间:[0.11]秒
+2021-10-10 01:45:06.458 | INFO     | Include.libs.error:check:78 - 未知异常简要：Object of type bytes is not JSON serializable
+2021-10-10 01:45:06.477 | INFO     | Include.libs.error:check:85 - 未知异常具体：Traceback (most recent call last):
+  File "E:\Python Flask\YuWenHua_flask\Include\libs\error.py", line 70, in check
+    res = f(*args, **kwargs)
+  File "E:\Python Flask\YuWenHua_flask\Include\api\v1\yuwenhua.py", line 153, in get_allmessage
+    return get_res_message("请求成功！", 200, result)
+  File "E:\Python Flask\YuWenHua_flask\Include\libs\error.py", line 58, in get_res_message
+    res = jsonify(res_data)
+  File "C:\Users\KK\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\json\__init__.py", line 348, in jsonify
+    f"{dumps(data, indent=indent, separators=separators)}\n",
+  File "C:\Users\KK\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\json\__init__.py", line 129, in dumps
+    rv = _json.dumps(obj, **kwargs)
+  File "C:\Users\KK\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "C:\Users\KK\AppData\Local\Programs\Python\Python39\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\KK\AppData\Local\Programs\Python\Python39\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\KK\AppData\Local\Programs\Python\Python39\lib\site-packages\flask\json\__init__.py", line 56, in default
+    return super().default(o)
+  File "C:\Users\KK\AppData\Local\Programs\Python\Python39\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bytes is not JSON serializable
+
+2021-10-10 01:50:31.136 | INFO     | Include.libs.error:check:74 - [get_allmessage]运行时间:[0.22]秒
+2021-10-10 01:53:08.516 | INFO     | Include.libs.error:check:74 - [get_allmessage]运行时间:[0.25]秒
+2021-10-10 01:57:06.723 | INFO     | Include.libs.error:check:74 - [get_classification]运行时间:[0.18]秒
+2021-10-10 11:36:39.605 | INFO     | Include.libs.error:check:74 - [get_allmessage]运行时间:[0.28]秒
+2021-10-10 11:37:17.686 | INFO     | Include.libs.error:check:74 - [get_allmessage]运行时间:[0.23]秒
+2021-10-10 15:42:10.583 | INFO     | Include.libs.error:check:74 - [search_message]运行时间:[0.12]秒
+2021-10-10 15:43:05.580 | INFO     | Include.libs.error:check:74 - [search_message]运行时间:[0.12]秒
+2021-10-10 15:50:49.123 | INFO     | Include.libs.error:check:74 - [search_message]运行时间:[0.11]秒
+2021-10-10 16:50:28.032 | INFO     | Include.libs.error:check:74 - [search_message]运行时间:[0.12]秒
+2021-10-10 17:04:20.219 | INFO     | Include.libs.error:check:74 - [get_classification]运行时间:[0.2]秒
+2021-10-10 17:15:16.221 | INFO     | Include.libs.error:check:74 - [get_classification]运行时间:[0.16]秒
+2021-10-10 17:15:44.086 | INFO     | Include.libs.error:check:74 - [get_classification]运行时间:[0.14]秒
+2021-10-10 17:16:12.762 | INFO     | Include.libs.error:check:74 - [get_classification]运行时间:[0.14]秒
+2021-10-10 17:16:26.626 | INFO     | Include.libs.error:check:74 - [get_classification]运行时间:[0.17]秒
+2021-10-10 17:17:15.848 | INFO     | Include.libs.error:check:74 - [get_classification]运行时间:[0.15]秒
+2021-10-10 17:18:11.017 | INFO     | Include.libs.error:check:74 - [get_classification]运行时间:[0.14]秒
+2021-10-10 17:19:01.641 | INFO     | Include.libs.error:check:74 - [get_classification]运行时间:[0.14]秒
+2021-10-10 17:19:23.949 | INFO     | Include.libs.error:check:74 - [get_classification]运行时间:[0.15]秒
+2021-10-10 17:21:34.869 | INFO     | Include.libs.error:check:74 - [get_classification]运行时间:[0.15]秒
+2021-10-10 17:21:49.632 | INFO     | Include.libs.error:check:74 - [get_classification]运行时间:[0.24]秒
+2021-10-10 17:22:12.600 | INFO     | Include.libs.error:check:74 - [get_classification]运行时间:[0.15]秒
+2021-10-10 17:24:09.737 | INFO     | Include.libs.error:check:74 - [get_classification]运行时间:[0.14]秒
+2021-10-10 17:24:33.181 | INFO     | Include.libs.error:check:74 - [get_classification]运行时间:[0.14]秒
+2021-10-10 17:24:54.567 | INFO     | Include.libs.error:check:74 - [get_classification]运行时间:[0.17]秒
+2021-10-10 17:25:56.470 | INFO     | Include.libs.error:check:74 - [get_classification]运行时间:[0.13]秒
+2021-10-10 17:27:39.220 | INFO     | Include.libs.error:check:74 - [get_classification]运行时间:[0.12]秒
+2021-10-10 17:28:31.259 | INFO     | Include.libs.error:check:74 - [get_classification]运行时间:[0.13]秒
+2021-10-10 17:29:09.860 | INFO     | Include.libs.error:check:74 - [get_allmessage]运行时间:[0.22]秒
+2021-10-10 17:29:39.467 | INFO     | Include.libs.error:check:74 - [get_allmessage]运行时间:[0.23]秒
+2021-10-10 17:29:57.195 | INFO     | Include.libs.error:check:74 - [get_classification]运行时间:[0.12]秒
+2021-10-10 17:30:27.669 | INFO     | Include.libs.error:check:74 - [get_classification]运行时间:[0.13]秒
+2021-10-10 17:31:25.717 | INFO     | Include.libs.error:check:74 - [get_classification]运行时间:[0.13]秒
+2021-10-10 17:34:32.722 | INFO     | Include.libs.error:check:74 - [get_classification]运行时间:[0.14]秒
+2021-10-10 17:43:09.519 | INFO     | Include.libs.error:check:74 - [get_classification]运行时间:[0.14]秒
+2021-10-10 17:44:10.771 | INFO     | Include.libs.error:check:74 - [get_classification]运行时间:[0.14]秒
+2021-10-10 19:21:36.519 | INFO     | Include.libs.error:check:74 - [get_classification]运行时间:[0.37]秒
+2021-10-10 19:22:01.876 | INFO     | Include.libs.error:check:74 - [get_classification]运行时间:[0.13]秒
+2021-10-10 19:23:44.155 | INFO     | Include.libs.error:check:74 - [get_classification]运行时间:[0.12]秒
+2021-10-10 19:25:27.456 | INFO     | Include.libs.error:check:74 - [get_allmessage]运行时间:[0.21]秒
+2021-10-10 19:44:41.226 | INFO     | Include.libs.error:check:74 - [get_allmessage]运行时间:[0.14]秒
+2021-10-10 19:45:53.501 | INFO     | Include.libs.error:check:74 - [get_allmessage]运行时间:[0.15]秒
+2021-10-10 19:47:23.390 | INFO     | Include.libs.error:check:78 - 未知异常简要：'ConnMysql' object has no attribute 'search_message'
+2021-10-10 19:47:23.405 | INFO     | Include.libs.error:check:85 - 未知异常具体：Traceback (most recent call last):
+  File "E:\Python Flask\YuWenHua_flask\Include\libs\error.py", line 70, in check
+    res = f(*args, **kwargs)
+  File "E:\Python Flask\YuWenHua_flask\Include\api\v1\yuwenhua.py", line 174, in search_message
+    result = database.search_message(keyword)
+AttributeError: 'ConnMysql' object has no attribute 'search_message'
+
+2021-10-10 19:47:37.383 | INFO     | Include.libs.error:check:74 - [get_allmessage]运行时间:[0.15]秒
+2021-10-10 19:47:55.017 | INFO     | Include.libs.error:check:74 - [get_allmessage]运行时间:[0.14]秒
+2021-10-10 19:51:15.314 | INFO     | Include.libs.error:check:74 - [get_allmessage]运行时间:[0.15]秒
+2021-10-10 19:59:13.057 | INFO     | Include.libs.error:check:74 - [get_allmessage]运行时间:[0.15]秒
+2021-10-10 20:31:06.078 | INFO     | Include.libs.error:check:74 - [get_allmessage]运行时间:[0.25]秒
+2021-10-10 20:33:55.430 | INFO     | Include.libs.error:check:74 - [search_message]运行时间:[0.12]秒
+2021-10-10 20:36:17.310 | INFO     | Include.libs.error:check:74 - [search_message]运行时间:[0.13]秒
+2021-10-10 20:37:07.102 | INFO     | Include.libs.error:check:74 - [search_message]运行时间:[0.16]秒
+2021-10-10 20:37:20.754 | INFO     | Include.libs.error:check:74 - [search_message]运行时间:[0.13]秒
+2021-10-10 20:38:22.085 | INFO     | Include.libs.error:check:74 - [get_allmessage]运行时间:[0.24]秒
+2021-10-10 20:56:11.045 | INFO     | Include.libs.error:check:74 - [vue_allmessage]运行时间:[0.13]秒
+2021-10-10 20:56:59.686 | INFO     | Include.libs.error:check:74 - [vue_allmessage]运行时间:[0.16]秒
+2021-10-10 21:34:20.349 | INFO     | Include.libs.error:check:74 - [delete]运行时间:[0.13]秒
+2021-10-10 21:37:18.732 | INFO     | Include.libs.error:check:74 - [vue_allmessage]运行时间:[0.11]秒
+2021-10-10 21:38:25.052 | INFO     | Include.libs.error:check:74 - [delete]运行时间:[0.11]秒
+2021-10-10 21:39:17.084 | INFO     | Include.libs.error:check:74 - [delete]运行时间:[0.11]秒
+2021-10-10 21:41:56.566 | INFO     | Include.libs.error:check:74 - [delete]运行时间:[0.16]秒
+2021-10-10 21:57:20.534 | INFO     | Include.libs.error:check:74 - [insert_classification]运行时间:[0.11]秒
+2021-10-10 21:57:44.378 | INFO     | Include.libs.error:check:74 - [insert_message]运行时间:[0.12]秒
+2021-10-10 21:58:12.005 | INFO     | Include.libs.error:check:74 - [insert_message]运行时间:[0.12]秒
+2021-10-10 21:58:53.035 | INFO     | Include.libs.error:check:74 - [insert_message]运行时间:[0.11]秒
+2021-10-10 22:01:43.255 | INFO     | Include.libs.error:check:74 - [insert_message]运行时间:[0.12]秒
+2021-10-10 22:17:37.466 | INFO     | Include.libs.error:check:74 - [insert_message]运行时间:[0.14]秒
+2021-10-10 22:45:54.301 | INFO     | Include.libs.error:check:74 - [get_type]运行时间:[0.12]秒
+2021-10-10 22:46:42.143 | INFO     | Include.libs.error:check:74 - [get_type]运行时间:[0.11]秒
+2021-10-11 00:11:49.787 | INFO     | Include.libs.error:check:74 - [get_type]运行时间:[0.12]秒
+2021-10-11 00:11:57.671 | INFO     | Include.libs.error:check:74 - [get_type]运行时间:[0.18]秒
+2021-10-11 00:12:26.873 | INFO     | Include.libs.error:check:74 - [get_type]运行时间:[0.16]秒
+2021-10-11 00:16:33.530 | INFO     | Include.libs.error:check:74 - [get_type]运行时间:[0.16]秒
+2021-10-11 00:21:52.354 | INFO     | Include.libs.error:check:74 - [get_classification]运行时间:[0.12]秒
+2021-10-11 00:21:59.280 | INFO     | Include.libs.error:check:74 - [get_classification]运行时间:[0.11]秒
+2021-10-11 00:29:50.795 | INFO     | Include.libs.error:check:74 - [get_classification]运行时间:[0.13]秒
+2021-10-11 00:40:08.995 | INFO     | Include.libs.error:check:74 - [update_message]运行时间:[0.11]秒
+2021-10-12 13:24:07.527 | INFO     | Include.libs.error:check:74 - [search_message]运行时间:[0.12]秒
+2021-10-12 13:25:02.878 | INFO     | Include.libs.error:check:74 - [search_message]运行时间:[0.12]秒
+2021-10-12 13:28:04.636 | INFO     | Include.libs.error:check:74 - [search_mymessage]运行时间:[0.12]秒
+2021-10-12 13:29:22.235 | INFO     | Include.libs.error:check:74 - [search_mymessage]运行时间:[0.14]秒
+2021-10-12 13:30:21.855 | INFO     | Include.libs.error:check:74 - [get_classification]运行时间:[0.11]秒
+2021-10-12 13:39:47.237 | INFO     | Include.libs.error:check:74 - [search_mymessage]运行时间:[0.12]秒
+2021-10-12 13:40:29.706 | INFO     | Include.libs.error:check:74 - [search_mymessage]运行时间:[0.12]秒
+2021-10-12 13:41:17.652 | INFO     | Include.libs.error:check:74 - [search_mymessage]运行时间:[0.09]秒
+2021-10-12 13:48:30.783 | INFO     | Include.libs.error:check:74 - [search_mymessage]运行时间:[0.13]秒
+2021-10-12 13:49:20.216 | INFO     | Include.libs.error:check:74 - [search_mymessage]运行时间:[0.1]秒
+2021-10-12 13:49:29.957 | INFO     | Include.libs.error:check:74 - [search_mymessage]运行时间:[0.13]秒
+2021-10-12 14:14:29.188 | INFO     | Include.libs.error:check:74 - [add_user]运行时间:[0.14]秒
+2021-10-12 14:24:34.920 | INFO     | Include.libs.error:check:74 - [find_user]运行时间:[0.13]秒
+2021-10-12 14:25:01.661 | INFO     | Include.libs.error:check:74 - [find_user]运行时间:[0.13]秒
+2021-10-12 14:27:37.304 | INFO     | Include.libs.error:check:74 - [find_user]运行时间:[0.11]秒
+2021-10-12 14:28:49.628 | INFO     | Include.libs.error:check:74 - [find_user]运行时间:[0.13]秒
+2021-10-12 14:29:01.877 | INFO     | Include.libs.error:check:74 - [find_user]运行时间:[0.15]秒
+2021-10-12 14:29:15.822 | INFO     | Include.libs.error:check:74 - [find_user]运行时间:[0.12]秒
+2021-10-12 14:29:40.768 | INFO     | Include.libs.error:check:74 - [find_user]运行时间:[0.13]秒
+2021-10-12 14:30:17.599 | INFO     | Include.libs.error:check:74 - [find_user]运行时间:[0.14]秒
+2021-10-12 14:32:41.872 | INFO     | Include.libs.error:check:74 - [find_user]运行时间:[0.12]秒
+2021-10-12 14:33:22.606 | INFO     | Include.libs.error:check:74 - [find_user]运行时间:[0.14]秒
+2021-10-12 14:34:38.991 | INFO     | Include.libs.error:check:74 - [find_user]运行时间:[0.14]秒
+2021-10-12 14:35:48.147 | INFO     | Include.libs.error:check:74 - [find_user]运行时间:[0.12]秒
+2021-10-12 14:36:48.212 | INFO     | Include.libs.error:check:74 - [find_user]运行时间:[0.13]秒
+2021-10-12 14:40:24.582 | INFO     | Include.libs.error:check:74 - [find_user]运行时间:[0.13]秒
+2021-10-12 14:45:56.808 | INFO     | Include.libs.error:check:74 - [find_user]运行时间:[0.14]秒
+2021-10-12 14:51:29.269 | INFO     | Include.libs.error:check:74 - [search_mymessage]运行时间:[0.13]秒
+2021-10-12 14:51:33.837 | INFO     | Include.libs.error:check:74 - [find_user]运行时间:[0.12]秒
+2021-10-12 14:51:46.822 | INFO     | Include.libs.error:check:74 - [find_user]运行时间:[0.12]秒
+2021-10-12 14:52:07.783 | INFO     | Include.libs.error:check:74 - [find_user]运行时间:[0.13]秒
+2021-10-12 14:52:16.645 | INFO     | Include.libs.error:check:74 - [find_user]运行时间:[0.13]秒
+2021-10-12 14:52:29.749 | INFO     | Include.libs.error:check:74 - [find_user]运行时间:[0.14]秒
+2021-10-12 14:53:27.550 | INFO     | Include.libs.error:check:74 - [find_user]运行时间:[0.14]秒
+2021-10-12 14:53:35.244 | INFO     | Include.libs.error:check:74 - [find_user]运行时间:[0.1]秒
+2021-10-12 14:55:06.406 | INFO     | Include.libs.error:check:74 - [find_user]运行时间:[0.13]秒
+2021-10-12 17:46:50.255 | INFO     | Include.libs.error:check:74 - [get_allmessage]运行时间:[0.22]秒
+2021-10-13 00:34:53.307 | INFO     | Include.libs.error:check:74 - [vue_allmessage]运行时间:[0.14]秒
+2021-10-16 14:47:23.615 | INFO     | Include.libs.error:check:74 - [get_type]运行时间:[0.16]秒
+2021-10-19 18:39:10.851 | INFO     | Include.libs.error:check:74 - [change_money]运行时间:[0.09]秒
+2021-10-19 18:39:50.363 | INFO     | Include.libs.error:check:74 - [change_money]运行时间:[0.08]秒
+2021-10-19 18:40:28.063 | INFO     | Include.libs.error:check:78 - 未知异常简要：local variable 'result' referenced before assignment
+2021-10-19 18:40:28.073 | INFO     | Include.libs.error:check:85 - 未知异常具体：Traceback (most recent call last):
+  File "E:\Python Flask\YuWenHua_flask\Include\libs\error.py", line 70, in check
+    res = f(*args, **kwargs)
+  File "E:\Python Flask\YuWenHua_flask\Include\api\v1\yuwenhua.py", line 406, in change_money
+    result = database.change_money(openid, effect, time, money, type)
+  File "E:\Python Flask\YuWenHua_flask\Include\api\v1\yuwenhua.py", line 297, in change_money
+    return result
+UnboundLocalError: local variable 'result' referenced before assignment
+
+2021-10-19 18:41:23.763 | INFO     | Include.libs.error:check:74 - [change_money]运行时间:[0.08]秒
+2021-10-19 18:45:38.961 | INFO     | Include.libs.error:check:74 - [change_money]运行时间:[1.14]秒
+2021-10-19 18:47:20.318 | INFO     | Include.libs.error:check:78 - 未知异常简要：(2003, "Can't connect to MySQL server on 'rm-bp143e674ppv825221o.mysql.rds.aliyuncs.com' ([Errno 11001] getaddrinfo failed)")
+2021-10-19 18:47:20.342 | INFO     | Include.libs.error:check:85 - 未知异常具体：Traceback (most recent call last):
+  File "C:\Users\KK\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\connections.py", line 613, in connect
+    sock = socket.create_connection(
+  File "C:\Users\KK\AppData\Local\Programs\Python\Python39\lib\socket.py", line 822, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "C:\Users\KK\AppData\Local\Programs\Python\Python39\lib\socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Python Flask\YuWenHua_flask\Include\libs\error.py", line 70, in check
+    res = f(*args, **kwargs)
+  File "E:\Python Flask\YuWenHua_flask\Include\api\v1\yuwenhua.py", line 399, in change_money
+    database = ConnMysql()
+  File "E:\Python Flask\YuWenHua_flask\Include\api\v1\yuwenhua.py", line 21, in __init__
+    self.db = pymysql.connect(host='rm-bp143e674ppv825221o.mysql.rds.aliyuncs.com',
+  File "C:\Users\KK\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\connections.py", line 353, in __init__
+    self.connect()
+  File "C:\Users\KK\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on 'rm-bp143e674ppv825221o.mysql.rds.aliyuncs.com' ([Errno 11001] getaddrinfo failed)")
+
+2021-10-19 18:47:36.414 | INFO     | Include.libs.error:check:78 - 未知异常简要：(2003, "Can't connect to MySQL server on 'rm-bp143e674ppv825221o.mysql.rds.aliyuncs.com' (timed out)")
+2021-10-19 18:47:36.431 | INFO     | Include.libs.error:check:85 - 未知异常具体：Traceback (most recent call last):
+  File "C:\Users\KK\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\connections.py", line 613, in connect
+    sock = socket.create_connection(
+  File "C:\Users\KK\AppData\Local\Programs\Python\Python39\lib\socket.py", line 843, in create_connection
+    raise err
+  File "C:\Users\KK\AppData\Local\Programs\Python\Python39\lib\socket.py", line 831, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Python Flask\YuWenHua_flask\Include\libs\error.py", line 70, in check
+    res = f(*args, **kwargs)
+  File "E:\Python Flask\YuWenHua_flask\Include\api\v1\yuwenhua.py", line 399, in change_money
+    database = ConnMysql()
+  File "E:\Python Flask\YuWenHua_flask\Include\api\v1\yuwenhua.py", line 21, in __init__
+    self.db = pymysql.connect(host='rm-bp143e674ppv825221o.mysql.rds.aliyuncs.com',
+  File "C:\Users\KK\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\connections.py", line 353, in __init__
+    self.connect()
+  File "C:\Users\KK\AppData\Local\Programs\Python\Python39\lib\site-packages\pymysql\connections.py", line 664, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on 'rm-bp143e674ppv825221o.mysql.rds.aliyuncs.com' (timed out)")
+
+2021-10-19 18:47:54.336 | INFO     | Include.libs.error:check:74 - [change_money]运行时间:[0.08]秒
+2021-10-19 18:48:52.624 | INFO     | Include.libs.error:check:74 - [change_money]运行时间:[0.17]秒
+2021-10-19 19:04:05.480 | INFO     | Include.libs.error:check:74 - [change_money]运行时间:[0.15]秒
+2021-10-19 19:05:12.903 | INFO     | Include.libs.error:check:74 - [change_money]运行时间:[0.15]秒
+2021-10-19 19:07:41.684 | INFO     | Include.libs.error:check:74 - [change_money]运行时间:[0.12]秒
+2021-10-19 19:08:07.342 | INFO     | Include.libs.error:check:74 - [change_money]运行时间:[0.11]秒
+2021-10-19 19:11:27.484 | INFO     | Include.libs.error:check:74 - [change_money]运行时间:[0.11]秒
+2021-10-19 19:12:38.500 | INFO     | Include.libs.error:check:74 - [change_money]运行时间:[0.12]秒
+2021-10-19 19:14:12.566 | INFO     | Include.libs.error:check:74 - [change_money]运行时间:[0.09]秒
+2021-10-19 19:14:57.181 | INFO     | Include.libs.error:check:74 - [change_money]运行时间:[0.08]秒
+2021-10-19 19:16:46.920 | INFO     | Include.libs.error:check:74 - [change_money]运行时间:[0.09]秒
+2021-10-19 19:18:01.055 | INFO     | Include.libs.error:check:74 - [change_money]运行时间:[0.1]秒
+2021-10-19 19:18:42.740 | INFO     | Include.libs.error:check:74 - [change_money]运行时间:[0.09]秒
+2021-10-19 19:19:53.392 | INFO     | Include.libs.error:check:74 - [change_money]运行时间:[0.09]秒
+2021-10-19 19:20:24.007 | INFO     | Include.libs.error:check:74 - [change_money]运行时间:[0.09]秒
+2021-10-19 19:20:44.720 | INFO     | Include.libs.error:check:74 - [change_money]运行时间:[0.15]秒
+2021-10-19 19:21:58.526 | INFO     | Include.libs.error:check:74 - [change_money]运行时间:[0.18]秒
+2021-10-19 19:22:20.276 | INFO     | Include.libs.error:check:74 - [change_money]运行时间:[0.23]秒
+2021-10-19 19:26:26.530 | INFO     | Include.libs.error:check:74 - [change_money]运行时间:[0.11]秒
+2021-10-19 19:28:46.227 | INFO     | Include.libs.error:check:74 - [change_money]运行时间:[0.11]秒
+2021-10-19 19:29:46.868 | INFO     | Include.libs.error:check:74 - [change_money]运行时间:[0.12]秒
+2021-10-19 19:30:14.367 | INFO     | Include.libs.error:check:74 - [change_money]运行时间:[0.11]秒
+2021-10-19 19:30:55.309 | INFO     | Include.libs.error:check:74 - [change_money]运行时间:[0.18]秒
+2021-10-19 20:24:41.094 | INFO     | Include.libs.error:check:74 - [change_money]运行时间:[0.13]秒
+2021-10-19 20:25:56.355 | INFO     | Include.libs.error:check:74 - [change_money]运行时间:[0.19]秒
+2021-10-19 20:28:24.028 | INFO     | Include.libs.error:check:74 - [change_money]运行时间:[0.18]秒
+2021-10-19 20:28:59.666 | INFO     | Include.libs.error:check:74 - [change_money]运行时间:[0.2]秒
+2021-10-19 20:30:46.463 | INFO     | Include.libs.error:check:74 - [change_money]运行时间:[0.2]秒
+2021-10-19 20:31:36.688 | INFO     | Include.libs.error:check:74 - [change_money]运行时间:[0.2]秒
+2021-10-19 20:32:58.556 | INFO     | Include.libs.error:check:74 - [change_money]运行时间:[0.21]秒
+2021-10-19 20:34:57.660 | INFO     | Include.libs.error:check:74 - [change_money]运行时间:[0.18]秒
+2021-10-19 20:35:14.566 | INFO     | Include.libs.error:check:74 - [change_money]运行时间:[0.1]秒
+2021-10-19 20:35:53.978 | INFO     | Include.libs.error:check:74 - [change_money]运行时间:[0.18]秒
+2021-10-19 21:06:56.833 | INFO     | Include.libs.error:check:74 - [find_change]运行时间:[0.12]秒
+2021-10-19 21:12:52.499 | INFO     | Include.libs.error:check:74 - [find_change]运行时间:[0.12]秒
+2021-10-20 00:06:49.773 | INFO     | Include.libs.error:check:74 - [check_signin]运行时间:[0.12]秒
+2021-10-20 00:07:02.392 | INFO     | Include.libs.error:check:74 - [check_signin]运行时间:[0.11]秒
+2021-10-20 00:09:10.753 | INFO     | Include.libs.error:check:74 - [check_signin]运行时间:[0.19]秒
+2021-10-20 00:09:43.696 | INFO     | Include.libs.error:check:74 - [check_signin]运行时间:[0.13]秒
+2021-10-20 00:09:53.173 | INFO     | Include.libs.error:check:74 - [check_signin]运行时间:[0.11]秒
+2021-10-20 00:10:01.767 | INFO     | Include.libs.error:check:74 - [check_signin]运行时间:[0.12]秒
+2021-10-20 20:36:20.970 | INFO     | Include.libs.error:check:74 - [add_user]运行时间:[0.26]秒
+2021-10-21 00:20:46.062 | INFO     | Include.libs.error:check:74 - [add_user]运行时间:[0.14]秒
+2021-10-21 00:21:09.306 | INFO     | Include.libs.error:check:74 - [add_user]运行时间:[0.14]秒
+2021-10-21 00:24:03.436 | INFO     | Include.libs.error:check:74 - [add_user]运行时间:[0.28]秒
+2021-10-21 00:25:17.024 | INFO     | Include.libs.error:check:74 - [find_user]运行时间:[0.15]秒
+2021-10-21 00:26:57.949 | INFO     | Include.libs.error:check:74 - [find_user]运行时间:[0.16]秒
+2021-10-21 00:27:23.120 | INFO     | Include.libs.error:check:74 - [find_user]运行时间:[0.17]秒
+2021-10-21 00:28:02.478 | INFO     | Include.libs.error:check:74 - [find_user]运行时间:[0.14]秒
+2021-10-21 00:29:21.303 | INFO     | Include.libs.error:check:74 - [find_user]运行时间:[0.14]秒
+2021-10-21 00:31:20.845 | INFO     | Include.libs.error:check:74 - [find_user]运行时间:[0.15]秒
+2021-10-21 00:32:07.648 | INFO     | Include.libs.error:check:74 - [find_user]运行时间:[0.14]秒
+2021-10-21 00:35:33.309 | INFO     | Include.libs.error:check:74 - [find_user]运行时间:[0.14]秒
+2021-10-21 18:28:26.735 | INFO     | Include.libs.error:check:74 - [ch_view]运行时间:[0.13]秒
+2021-10-21 22:52:08.311 | INFO     | Include.libs.error:check:74 - [get_user]运行时间:[0.13]秒
+2021-10-21 23:37:04.631 | INFO     | Include.libs.error:check:74 - [find_change]运行时间:[0.26]秒
+2021-10-22 15:06:48.188 | INFO     | Include.libs.error:check:74 - [get_user]运行时间:[0.14]秒
+2021-10-22 15:09:09.029 | INFO     | Include.libs.error:check:74 - [get_user]运行时间:[0.11]秒
+2021-10-22 15:09:20.364 | INFO     | Include.libs.error:check:74 - [get_user]运行时间:[0.13]秒
+2021-10-22 15:09:32.393 | INFO     | Include.libs.error:check:74 - [get_user]运行时间:[0.12]秒
+2021-10-22 15:09:37.433 | INFO     | Include.libs.error:check:74 - [get_user]运行时间:[0.12]秒
+2021-10-22 15:18:05.150 | INFO     | Include.libs.error:check:74 - [get_user]运行时间:[0.12]秒
+2021-10-22 15:20:44.038 | INFO     | Include.libs.error:check:74 - [get_user]运行时间:[0.17]秒
+2021-10-22 15:23:09.060 | INFO     | Include.libs.error:check:74 - [get_user]运行时间:[0.17]秒
+2021-10-22 15:24:00.757 | INFO     | Include.libs.error:check:74 - [get_user]运行时间:[0.17]秒
+2021-10-22 15:24:13.433 | INFO     | Include.libs.error:check:74 - [get_user]运行时间:[0.16]秒
+2021-10-22 15:25:06.069 | INFO     | Include.libs.error:check:74 - [get_user]运行时间:[0.17]秒
+2021-10-22 15:25:41.644 | INFO     | Include.libs.error:check:74 - [get_user]运行时间:[0.17]秒
+2021-10-22 15:26:18.926 | INFO     | Include.libs.error:check:74 - [get_user]运行时间:[0.17]秒
+2021-10-22 15:27:40.816 | INFO     | Include.libs.error:check:74 - [get_user]运行时间:[0.18]秒
+2021-10-22 15:28:01.826 | INFO     | Include.libs.error:check:74 - [get_user]运行时间:[0.17]秒
+2021-10-22 15:28:19.206 | INFO     | Include.libs.error:check:74 - [get_user]运行时间:[0.23]秒
+2021-10-22 15:29:56.137 | INFO     | Include.libs.error:check:74 - [get_user]运行时间:[0.18]秒
+2021-10-22 15:30:05.490 | INFO     | Include.libs.error:check:74 - [get_user]运行时间:[0.17]秒
+2021-10-22 15:30:35.505 | INFO     | Include.libs.error:check:74 - [get_user]运行时间:[0.16]秒
+2021-10-22 15:30:48.579 | INFO     | Include.libs.error:check:74 - [get_user]运行时间:[0.17]秒
+2021-10-22 15:33:34.089 | INFO     | Include.libs.error:check:74 - [get_user]运行时间:[0.12]秒
+2021-10-22 15:38:31.060 | INFO     | Include.libs.error:check:74 - [get_user]运行时间:[0.15]秒
+2021-10-22 15:38:40.721 | INFO     | Include.libs.error:check:74 - [get_user]运行时间:[0.14]秒
+2021-10-22 16:20:02.252 | INFO     | Include.libs.error:check:74 - [update_exchange]运行时间:[0.12]秒
+2021-10-22 16:20:13.195 | INFO     | Include.libs.error:check:74 - [update_exchange]运行时间:[0.11]秒
+2021-10-22 16:26:06.836 | INFO     | Include.libs.error:check:74 - [update_exchange]运行时间:[0.13]秒
+2021-10-22 16:27:53.707 | INFO     | Include.libs.error:check:74 - [update_exchange]运行时间:[0.11]秒
+2021-10-22 16:30:30.694 | INFO     | Include.libs.error:check:74 - [update_exchange]运行时间:[0.12]秒
+2021-10-22 16:33:05.552 | INFO     | Include.libs.error:check:74 - [update_exchange]运行时间:[0.12]秒
+2021-10-22 16:33:07.209 | INFO     | Include.libs.error:check:74 - [update_exchange]运行时间:[0.1]秒
+2021-10-22 16:35:54.580 | INFO     | Include.libs.error:check:74 - [update_exchange]运行时间:[0.15]秒
+2021-10-22 16:55:00.244 | INFO     | Include.libs.error:check:74 - [update_exchange]运行时间:[0.16]秒
+2021-10-22 16:59:00.171 | INFO     | Include.libs.error:check:74 - [update_exchange]运行时间:[0.14]秒
+2021-10-22 16:59:05.224 | INFO     | Include.libs.error:check:74 - [update_exchange]运行时间:[0.1]秒
+2021-10-22 16:59:12.647 | INFO     | Include.libs.error:check:74 - [update_exchange]运行时间:[0.11]秒
+2021-10-22 17:06:38.071 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.13]秒
+2021-10-22 17:07:52.495 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.12]秒
+2021-10-22 17:08:06.104 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.11]秒
+2021-10-22 17:08:16.471 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.11]秒
+2021-10-22 17:08:43.518 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.14]秒
+2021-10-22 17:08:50.961 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.12]秒
+2021-10-22 17:13:28.915 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.14]秒
+2021-10-22 17:13:41.088 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.12]秒
+2021-10-22 17:14:13.010 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.14]秒
+2021-10-22 17:14:19.429 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.14]秒
+2021-10-22 17:14:56.604 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.12]秒
+2021-10-22 17:28:51.342 | INFO     | Include.libs.error:check:74 - [insert_exInfors]运行时间:[0.13]秒
+2021-10-22 17:37:10.723 | INFO     | Include.libs.error:check:74 - [get_exinfors]运行时间:[0.11]秒
+2021-10-22 17:37:34.517 | INFO     | Include.libs.error:check:74 - [insert_exInfors]运行时间:[0.12]秒
+2021-10-22 17:37:57.977 | INFO     | Include.libs.error:check:74 - [get_exinfors]运行时间:[0.13]秒
+2021-10-22 17:46:05.965 | INFO     | Include.libs.error:check:74 - [insert_exInfors]运行时间:[0.11]秒
+2021-10-22 17:47:21.192 | INFO     | Include.libs.error:check:74 - [insert_exInfors]运行时间:[0.12]秒
+2021-10-22 17:47:33.927 | INFO     | Include.libs.error:check:74 - [get_exinfors]运行时间:[0.1]秒
+2021-10-22 17:56:22.469 | INFO     | Include.libs.error:check:74 - [update_exchange]运行时间:[0.11]秒
+2021-10-22 17:56:36.670 | INFO     | Include.libs.error:check:74 - [update_exchange]运行时间:[0.15]秒
+2021-10-22 17:58:38.484 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.1]秒
+2021-10-22 17:58:46.557 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.11]秒
+2021-10-22 18:00:17.937 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.11]秒
+2021-10-22 18:03:00.541 | INFO     | Include.libs.error:check:74 - [get_exinfors]运行时间:[0.11]秒
+2021-10-22 18:04:07.405 | INFO     | Include.libs.error:check:74 - [get_exchange]运行时间:[0.14]秒
+2021-10-22 18:07:46.840 | INFO     | Include.libs.error:check:74 - [get_exchange]运行时间:[0.12]秒
+2021-10-22 18:12:24.239 | INFO     | Include.libs.error:check:74 - [get_exchange]运行时间:[0.16]秒
+2021-10-22 18:12:54.409 | INFO     | Include.libs.error:check:74 - [get_exinfors]运行时间:[0.12]秒
+2021-10-22 18:13:49.447 | INFO     | Include.libs.error:check:74 - [get_exinfors]运行时间:[0.14]秒
+2021-10-22 19:43:20.909 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.12]秒
+2021-10-22 19:44:43.921 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.13]秒
+2021-10-22 19:48:00.780 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.15]秒
+2021-10-22 19:48:46.394 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.14]秒
+2021-10-22 19:52:10.486 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.13]秒
+2021-10-22 19:54:25.221 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.12]秒
+2021-10-22 19:58:33.270 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.14]秒
+2021-10-22 20:01:02.715 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.11]秒
+2021-10-22 20:02:56.220 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.13]秒
+2021-10-22 20:06:59.529 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.14]秒
+2021-10-22 20:07:56.610 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.13]秒
+2021-10-22 20:08:18.237 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.1]秒
+2021-10-22 20:09:06.796 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.13]秒
+2021-10-22 20:09:12.103 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.1]秒
+2021-10-22 20:09:16.144 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.11]秒
+2021-10-22 20:09:19.825 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.12]秒
+2021-10-22 20:11:41.852 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.14]秒
+2021-10-22 20:11:59.493 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.11]秒
+2021-10-22 20:20:24.575 | INFO     | Include.libs.error:check:74 - [insert_exInfors]运行时间:[0.12]秒
+2021-10-22 20:25:58.548 | INFO     | Include.libs.error:check:74 - [insert_exInfors]运行时间:[0.2]秒
+2021-10-22 20:26:36.992 | INFO     | Include.libs.error:check:74 - [insert_exInfors]运行时间:[0.17]秒
+2021-10-22 20:28:03.786 | INFO     | Include.libs.error:check:74 - [insert_exInfors]运行时间:[0.18]秒
+2021-10-22 20:29:34.147 | INFO     | Include.libs.error:check:74 - [insert_exInfors]运行时间:[0.18]秒
+2021-10-22 20:30:20.621 | INFO     | Include.libs.error:check:74 - [insert_exInfors]运行时间:[0.18]秒
+2021-10-22 20:32:15.631 | INFO     | Include.libs.error:check:74 - [insert_exInfors]运行时间:[0.18]秒
+2021-10-22 20:33:24.806 | INFO     | Include.libs.error:check:74 - [insert_exInfors]运行时间:[0.12]秒
+2021-10-22 20:33:59.921 | INFO     | Include.libs.error:check:74 - [insert_exInfors]运行时间:[0.17]秒
+2021-10-22 20:35:10.055 | INFO     | Include.libs.error:check:74 - [insert_exInfors]运行时间:[0.2]秒
+2021-10-22 20:36:10.358 | INFO     | Include.libs.error:check:74 - [insert_exInfors]运行时间:[0.18]秒
+2021-10-22 20:36:24.942 | INFO     | Include.libs.error:check:74 - [insert_exInfors]运行时间:[0.21]秒
+2021-10-22 21:59:33.472 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.13]秒
+2021-10-22 21:59:40.898 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.12]秒
+2021-10-22 22:03:46.122 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.13]秒
+2021-10-22 22:03:52.213 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.11]秒
+2021-10-23 01:25:21.117 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.12]秒
+2021-10-23 01:51:41.861 | INFO     | Include.libs.error:check:74 - [update_exchange]运行时间:[0.15]秒
+2021-10-23 01:52:40.696 | INFO     | Include.libs.error:check:74 - [update_exchange]运行时间:[0.17]秒
+2021-10-23 01:54:01.377 | INFO     | Include.libs.error:check:74 - [update_exchange]运行时间:[0.16]秒
+2021-10-23 01:55:57.379 | INFO     | Include.libs.error:check:74 - [update_exchange]运行时间:[0.14]秒
+2021-10-23 01:57:20.624 | INFO     | Include.libs.error:check:74 - [update_exchange]运行时间:[0.23]秒
+2021-10-23 01:58:17.374 | INFO     | Include.libs.error:check:74 - [update_exchange]运行时间:[0.14]秒
+2021-10-23 01:59:37.662 | INFO     | Include.libs.error:check:74 - [update_exchange]运行时间:[0.16]秒
+2021-10-23 02:00:04.420 | INFO     | Include.libs.error:check:74 - [update_exchange]运行时间:[0.14]秒
+2021-10-23 02:18:52.455 | INFO     | Include.libs.error:check:74 - [update_exchange]运行时间:[0.1]秒
+2021-10-23 02:19:36.750 | INFO     | Include.libs.error:check:74 - [update_exchange]运行时间:[0.11]秒
+2021-10-23 02:20:05.520 | INFO     | Include.libs.error:check:74 - [update_exchange]运行时间:[0.11]秒
+2021-10-23 02:20:47.074 | INFO     | Include.libs.error:check:74 - [update_exchange]运行时间:[0.11]秒
+2021-10-23 02:22:05.613 | INFO     | Include.libs.error:check:74 - [update_exchange]运行时间:[0.1]秒
+2021-10-23 02:24:31.230 | INFO     | Include.libs.error:check:74 - [update_exchange]运行时间:[0.1]秒
+2021-10-23 02:25:12.482 | INFO     | Include.libs.error:check:74 - [update_exchanges]运行时间:[0.1]秒
+2021-10-23 02:26:27.538 | INFO     | Include.libs.error:check:74 - [update_exchanges]运行时间:[0.1]秒
+2021-10-23 02:26:29.242 | INFO     | Include.libs.error:check:74 - [update_exchanges]运行时间:[0.09]秒
+2021-10-23 02:27:53.247 | INFO     | Include.libs.error:check:74 - [update_exchanges]运行时间:[0.11]秒
+2021-10-23 02:28:53.269 | INFO     | Include.libs.error:check:74 - [update_exchanges]运行时间:[0.15]秒
+2021-10-23 02:31:16.980 | INFO     | Include.libs.error:check:74 - [update_exchanges]运行时间:[0.16]秒
+2021-10-23 02:32:12.129 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.11]秒
+2021-10-23 02:48:28.357 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.12]秒
+2021-10-23 02:48:32.581 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.1]秒
+2021-10-23 02:48:42.401 | INFO     | Include.libs.error:check:74 - [get_exchange]运行时间:[0.21]秒
+2021-10-23 02:49:41.710 | INFO     | Include.libs.error:check:74 - [get_exchange]运行时间:[0.2]秒
+2021-10-23 02:51:07.992 | INFO     | Include.libs.error:check:74 - [get_exchange]运行时间:[0.17]秒
+2021-10-23 02:52:11.046 | INFO     | Include.libs.error:check:74 - [get_exchange]运行时间:[0.17]秒
+2021-10-23 02:53:15.409 | INFO     | Include.libs.error:check:74 - [get_exchange]运行时间:[0.17]秒
+2021-10-23 03:06:55.225 | INFO     | Include.libs.error:check:74 - [get_exinfors]运行时间:[0.12]秒
+2021-10-23 03:21:07.142 | INFO     | Include.libs.error:check:74 - [get_exchange]运行时间:[0.13]秒
+2021-10-23 03:22:01.591 | INFO     | Include.libs.error:check:74 - [get_exchange]运行时间:[0.15]秒
+2021-10-23 03:22:28.882 | INFO     | Include.libs.error:check:74 - [delete_exchanges]运行时间:[0.12]秒
+2021-10-23 13:43:47.846 | INFO     | Include.libs.error:check:74 - [get_exinfors]运行时间:[0.14]秒
+2021-10-23 14:04:25.534 | INFO     | Include.libs.error:check:74 - [change_money]运行时间:[0.19]秒
+2021-10-23 14:04:41.071 | INFO     | Include.libs.error:check:74 - [change_money]运行时间:[0.18]秒
+2021-10-23 14:06:39.800 | INFO     | Include.libs.error:check:74 - [change_money]运行时间:[0.22]秒
+2021-10-23 14:06:56.552 | INFO     | Include.libs.error:check:74 - [change_money]运行时间:[0.18]秒
+2021-10-23 14:17:15.220 | INFO     | Include.libs.error:check:74 - [check_times]运行时间:[0.09]秒
+2021-10-23 14:18:26.805 | INFO     | Include.libs.error:check:74 - [check_times]运行时间:[0.1]秒
+2021-10-23 14:19:07.769 | INFO     | Include.libs.error:check:74 - [check_times]运行时间:[0.1]秒
+2021-10-23 14:19:37.025 | INFO     | Include.libs.error:check:74 - [check_times]运行时间:[0.1]秒
+2021-10-23 14:20:08.770 | INFO     | Include.libs.error:check:74 - [check_times]运行时间:[0.11]秒
+2021-10-23 14:20:53.921 | INFO     | Include.libs.error:check:74 - [check_times]运行时间:[0.12]秒
+2021-10-23 14:21:25.465 | INFO     | Include.libs.error:check:74 - [check_times]运行时间:[0.11]秒
+2021-10-23 14:24:08.863 | INFO     | Include.libs.error:check:74 - [check_times]运行时间:[0.13]秒
+2021-10-23 14:24:50.415 | INFO     | Include.libs.error:check:74 - [check_times]运行时间:[0.12]秒
+2021-10-23 14:25:47.777 | INFO     | Include.libs.error:check:74 - [check_times]运行时间:[0.14]秒
+2021-10-23 14:31:20.913 | INFO     | Include.libs.error:check:74 - [check_times]运行时间:[0.11]秒
+2021-10-23 14:37:17.561 | INFO     | Include.libs.error:check:74 - [check_times]运行时间:[0.12]秒
+2021-10-23 14:37:41.205 | INFO     | Include.libs.error:check:74 - [check_times]运行时间:[0.11]秒
+2021-10-23 14:37:53.747 | INFO     | Include.libs.error:check:74 - [check_times]运行时间:[0.12]秒
+2021-10-23 15:20:34.899 | INFO     | Include.libs.error:check:74 - [get_exchange]运行时间:[0.17]秒
+2021-10-23 15:47:42.199 | INFO     | Include.libs.error:check:74 - [check_times]运行时间:[0.12]秒
+2021-10-23 15:48:18.896 | INFO     | Include.libs.error:check:74 - [check_times]运行时间:[0.15]秒
+2021-10-23 15:49:32.062 | INFO     | Include.libs.error:check:74 - [check_times]运行时间:[0.13]秒
+2021-10-23 15:50:27.915 | INFO     | Include.libs.error:check:74 - [check_times]运行时间:[0.13]秒
+2021-10-23 15:52:45.896 | INFO     | Include.libs.error:check:74 - [check_times]运行时间:[0.14]秒
+2021-10-23 15:53:28.490 | INFO     | Include.libs.error:check:74 - [check_times]运行时间:[0.11]秒
+2021-10-23 15:53:30.392 | INFO     | Include.libs.error:check:74 - [check_times]运行时间:[0.11]秒
+2021-10-23 15:53:36.375 | INFO     | Include.libs.error:check:74 - [check_times]运行时间:[0.12]秒
+2021-10-23 19:35:21.199 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.14]秒
+2021-10-23 19:35:44.437 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.15]秒
+2021-10-23 19:36:45.142 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.12]秒
+2021-10-23 19:37:48.666 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.12]秒
+2021-10-23 19:38:14.786 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.15]秒
+2021-10-23 19:53:45.281 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.14]秒
+2021-10-23 19:54:35.878 | INFO     | Include.libs.error:check:74 - [check_exchanges]运行时间:[0.14]秒
+2021-10-23 20:42:16.721 | INFO     | Include.libs.error:check:78 - 未知异常简要：insert_exInfor() missing 1 required positional argument: 'exchange_id'
+2021-10-23 20:42:16.730 | INFO     | Include.libs.error:check:85 - 未知异常具体：Traceback (most recent call last):
+  File "E:\Python Flask\YuWenHua_flask\Include\libs\error.py", line 70, in check
+    res = f(*args, **kwargs)
+  File "E:\Python Flask\YuWenHua_flask\Include\api\v1\yuwenhua.py", line 821, in insert_exInfors
+    result = database.insert_exInfor(exchange_number, openid, exchange_nickname, exchange_time, exchange_id)
+TypeError: insert_exInfor() missing 1 required positional argument: 'exchange_id'
+
+2021-10-23 20:45:36.209 | INFO     | Include.libs.error:check:74 - [insert_exInfors]运行时间:[0.12]秒
+2021-10-23 20:47:46.749 | INFO     | Include.libs.error:check:74 - [insert_exInfors]运行时间:[0.11]秒
+2021-10-23 20:48:37.879 | INFO     | Include.libs.error:check:74 - [insert_exInfors]运行时间:[0.11]秒
+2021-10-23 20:49:26.615 | INFO     | Include.libs.error:check:74 - [insert_exInfors]运行时间:[0.2]秒
+2021-10-23 21:39:28.468 | INFO     | Include.libs.error:check:74 - [check_exs]运行时间:[0.14]秒
+2021-10-23 21:45:12.839 | INFO     | Include.libs.error:check:74 - [check_exs]运行时间:[0.11]秒
+2021-10-23 21:45:16.821 | INFO     | Include.libs.error:check:74 - [check_exs]运行时间:[0.11]秒
+2021-10-24 00:19:05.145 | INFO     | Include.libs.error:check:74 - [update_exchanges]运行时间:[0.3]秒
+2021-10-24 00:21:04.628 | INFO     | Include.libs.error:check:74 - [update_exchanges]运行时间:[0.15]秒
+2021-10-24 00:21:49.917 | INFO     | Include.libs.error:check:74 - [insert_exInfors]运行时间:[0.21]秒
+2021-10-24 00:45:31.644 | INFO     | Include.libs.error:check:74 - [update_exchanges]运行时间:[0.16]秒
+2021-10-24 17:02:33.976 | INFO     | Include.libs.error:check:74 - [get_exchange]运行时间:[0.17]秒
+2021-10-24 17:02:50.612 | INFO     | Include.libs.error:check:74 - [get_exchange]运行时间:[0.15]秒
+2021-10-24 17:03:36.618 | INFO     | Include.libs.error:check:74 - [get_exchange]运行时间:[0.22]秒
+2021-10-25 19:29:16.041 | INFO     | Include.libs.error:check:74 - [get_classification]运行时间:[0.46]秒
+2021-10-25 19:52:03.030 | INFO     | Include.libs.error:check:78 - 未知异常简要：'NoneType' object has no attribute 'get'
+2021-10-25 19:52:03.042 | INFO     | Include.libs.error:check:85 - 未知异常具体：Traceback (most recent call last):
+  File "E:\Python Flask\YuWenHua_flask\Include\libs\error.py", line 70, in check
+    res = f(*args, **kwargs)
+  File "E:\Python Flask\YuWenHua_flask\Include\api\v1\user.py", line 104, in get_user
+    page = request.json.get('page')
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2021-10-25 19:53:03.662 | INFO     | Include.libs.error:check:78 - 未知异常简要：'NoneType' object has no attribute 'get'
+2021-10-25 19:53:03.671 | INFO     | Include.libs.error:check:85 - 未知异常具体：Traceback (most recent call last):
+  File "E:\Python Flask\YuWenHua_flask\Include\libs\error.py", line 70, in check
+    res = f(*args, **kwargs)
+  File "E:\Python Flask\YuWenHua_flask\Include\api\v1\user.py", line 104, in get_user
+    page = request.json.get('page')
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2021-10-25 19:53:58.981 | INFO     | Include.libs.error:check:78 - 未知异常简要：'NoneType' object has no attribute 'get'
+2021-10-25 19:53:58.989 | INFO     | Include.libs.error:check:85 - 未知异常具体：Traceback (most recent call last):
+  File "E:\Python Flask\YuWenHua_flask\Include\libs\error.py", line 70, in check
+    res = f(*args, **kwargs)
+  File "E:\Python Flask\YuWenHua_flask\Include\api\v1\user.py", line 104, in get_user
+    page = request.json.get('page')
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2021-10-25 19:54:58.148 | INFO     | Include.libs.error:check:74 - [get_user]运行时间:[0.6]秒
+2021-10-25 19:55:18.031 | INFO     | Include.libs.error:check:78 - 未知异常简要：'NoneType' object has no attribute 'get'
+2021-10-25 19:55:18.039 | INFO     | Include.libs.error:check:85 - 未知异常具体：Traceback (most recent call last):
+  File "E:\Python Flask\YuWenHua_flask\Include\libs\error.py", line 70, in check
+    res = f(*args, **kwargs)
+  File "E:\Python Flask\YuWenHua_flask\Include\api\v1\user.py", line 104, in get_user
+    page = request.json.get('page')
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2021-10-25 19:56:21.571 | INFO     | Include.libs.error:check:78 - 未知异常简要：'NoneType' object has no attribute 'get'
+2021-10-25 19:56:21.581 | INFO     | Include.libs.error:check:85 - 未知异常具体：Traceback (most recent call last):
+  File "E:\Python Flask\YuWenHua_flask\Include\libs\error.py", line 70, in check
+    res = f(*args, **kwargs)
+  File "E:\Python Flask\YuWenHua_flask\Include\api\v1\user.py", line 104, in get_user
+    page = request.json.get('page')
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2021-10-25 19:56:57.343 | INFO     | Include.libs.error:check:74 - [get_user]运行时间:[0.45]秒
+2021-10-25 19:58:57.542 | INFO     | Include.libs.error:check:74 - [find_user]运行时间:[0.57]秒
+2021-10-25 20:04:50.503 | INFO     | Include.libs.error:check:74 - [add_user]运行时间:[9.27]秒
+2021-10-25 20:08:19.022 | INFO     | Include.libs.error:check:74 - [add_user]运行时间:[6.32]秒
+2021-10-25 20:11:01.855 | INFO     | Include.libs.error:check:74 - [add_user]运行时间:[0.46]秒
+2021-10-25 20:11:37.850 | INFO     | Include.libs.error:check:74 - [add_user]运行时间:[0.43]秒
+2021-10-25 20:12:11.401 | INFO     | Include.libs.error:check:74 - [add_user]运行时间:[0.32]秒
+2021-10-25 20:17:33.929 | INFO     | Include.libs.error:check:74 - [add_user]运行时间:[0.37]秒
+2021-10-25 20:19:02.562 | INFO     | Include.libs.error:check:74 - [add_user]运行时间:[0.49]秒
+2021-10-25 20:26:41.128 | INFO     | Include.libs.error:check:74 - [add_user]运行时间:[0.46]秒
+2021-10-25 20:28:25.810 | INFO     | Include.libs.error:check:74 - [add_user]运行时间:[0.41]秒
+2021-10-25 20:30:13.068 | INFO     | Include.libs.error:check:74 - [add_user]运行时间:[0.41]秒
+2021-10-25 20:30:31.047 | INFO     | Include.libs.error:check:74 - [add_user]运行时间:[0.43]秒
+2021-10-25 20:32:39.350 | INFO     | Include.libs.error:check:74 - [add_user]运行时间:[0.63]秒
+2021-10-26 09:36:29.815 | INFO     | Include.libs.error:check:74 - [get_allmessage]运行时间:[0.25]秒
+2021-10-26 09:38:30.658 | INFO     | Include.libs.error:check:78 - 未知异常简要：'NoneType' object has no attribute 'get'
+2021-10-26 09:38:30.664 | INFO     | Include.libs.error:check:85 - 未知异常具体：Traceback (most recent call last):
+  File "E:\Python Flask\YuWenHua_flask\Include\libs\error.py", line 70, in check
+    res = f(*args, **kwargs)
+  File "E:\Python Flask\YuWenHua_flask\Include\api\v1\message.py", line 250, in vue_allmessage
+    class_id = request.json.get('class_id')
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2021-10-26 09:39:18.692 | INFO     | Include.libs.error:check:74 - [vue_allmessage]运行时间:[0.15]秒
+2021-10-29 14:35:53.006 | INFO     | Include.libs.error:check:74 - [get_classification]运行时间:[0.15]秒
+2021-11-02 23:58:19.852 | INFO     | Include.libs.error:check:74 - [get_classification]运行时间:[0.15]秒
+2021-11-03 00:00:49.973 | INFO     | Include.libs.error:check:78 - 未知异常简要：'NoneType' object has no attribute 'get'
+2021-11-03 00:00:49.980 | INFO     | Include.libs.error:check:85 - 未知异常具体：Traceback (most recent call last):
+  File "E:\Python Flask\YuWenHua_flask\Include\libs\error.py", line 70, in check
+    res = f(*args, **kwargs)
+  File "E:\Python Flask\YuWenHua_flask\Include\api\v1\message.py", line 259, in search_mymessage
+    keyword = request.json.get('keyword')
+AttributeError: 'NoneType' object has no attribute 'get'
+
+2021-11-03 00:01:29.383 | INFO     | Include.libs.error:check:74 - [search_mymessage]运行时间:[0.13]秒
