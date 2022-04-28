@@ -4,19 +4,22 @@ from utils.jsonfyDbtable import *
 
 from flask_cors import CORS, cross_origin
 
+
 import numpy
 # 注册
 from flask import Flask, request
-from werkzeug.utils import redirect
+# from werkzeug.utils import redirect
 from utils.db_handle import *
+from libs.redprint import Redprint
+
+api = Redprint('earthquakePredict')
 #自己封装了一个，这个确实没啥用 from dbConnect import *
 import pymysql
 import json
 # 实例化数据库对象
 db=DB()
 jsfy=jsonfyDbtable()
-app = Flask(__name__)
-CORS(app, resources=r'/*')
+
 
 def userName_ishaving(userName):
     try:
@@ -122,7 +125,7 @@ def newerInfo_check(newerUserName,newerPassWord,newerPassWord_repeat):
         db.close_connect()
         return "fail"
 
-@app.route("/user/login",methods=["POST"])
+@api.route("/user/login",methods=["POST"])
 def user_login():
     try:
         print("用户登录")
@@ -138,7 +141,7 @@ def user_login():
         return "fail"
 
 
-@app.route("/user/register",methods=["POST"])
+@api.route("/user/register",methods=["POST"])
 def user_register():
     try:
         print("用户注册")
@@ -158,7 +161,7 @@ def user_register():
 
 
 
-@app.route("/user/foundUserInfo",methods=["POST"])
+@api.route("/user/foundUserInfo",methods=["POST"])
 def found_userInfo():
     try:
         targ_userData = request.form.get("targ_userData")
@@ -187,9 +190,7 @@ def update_userInfo(old):
     #展示没有修改用户信息的部分
     # 修改test
     pass
-if __name__=='__main__':
-    app.run(debug=True, port=5000, host="localhost")
-    CORS(app)
+
 
 
 

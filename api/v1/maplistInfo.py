@@ -6,15 +6,84 @@ from flask_cors import  CORS
 import pymysql
 from utils.jsonfyDbtable import *
 from utils.db_handle import *
+from libs.redprint import Redprint
 import json
 # 实例化数据库对象
 db=DB()
 jsfy=jsonfyDbtable()
 # 去封装一个模糊查询
 #调用模糊查询的方法
-app = Flask(__name__)
-CORS(app, resources=r'/*')
-@app.route('/searchinfo',methods=["POST"])
+# app = Flask(__name__)
+api = Redprint('earthquakePredict')
+# CORS(app, resources=r'/*')
+def getTabe_data(tablename,targ_key):
+    '''
+    :return:
+    '''
+    # 对targ key处理
+    targ_keyStr = ','.join(targ_key)
+    # print("116", targ_keyStr)
+    data=db.get_tragColumn_data_list(targ_keyStr,tablename)
+
+    # print("result",result)
+    return data
+
+# 判断表的类型进行数据的读出，表名的读出：
+def define_EmoGm_tableData(emorgm,tablenameList):
+    pass
+def get_allTable_data(tableClass):
+
+    print(tableClass)
+    print(type(tableClass))
+    allTableName=db.get_all_tablename("gasound")
+    print("allTableName",allTableName)
+    sound_key=["StationID","sound_var","sound_abs_max","sound_abs_mean","sound_abs_max_top5p","sound_mean"]
+    magn_key=["StationID","magn_var","magn_kurt","magn_abs_max","magn_abs_mean","magn_abs_max_top5p","magn_variance_frequency"]
+    # 判断给的是那种数据
+    dataList=[]
+    emTable_dataList=[]
+    gaTable_titleList=[]
+    emTable_titleList=[]
+    gaTable_dataList=[]
+    if tableClass=="em":
+        # em为地磁
+        for i in allTableName:
+            if "magn" in i:
+                emTable_titleList.append(i)
+                data=getTabe_data(i,magn_key)
+                # print("data\n",data)
+                for everData in data:
+                    emTable_dataList.append(everData)
+            else:
+                continue
+        print("len",len(emTable_dataList))
+        result=jsfy.jsonfy(magn_key,emTable_dataList)
+        print("result\n",result)
+
+        return result
+
+    elif tableClass=="ga":
+        # ga为地声
+        for i in allTableName:
+            if "sound" in i:
+                gaTable_titleList.append(i)
+                data=getTabe_data(i,sound_key)
+                # print("data\n",data)
+                for everData in data:
+                    gaTable_dataList.append(everData)
+            #         化为一维
+            else:
+                continue
+        print("len",len(gaTable_dataList))
+        result=jsfy.jsonfy(sound_key,gaTable_dataList)
+        print("\n,\n,",result)
+        return result
+
+    else:
+        print("啥也不是")
+        return (json.dumps({"message":"其他暂不提供"}))
+
+@api.route('/searchinfo',methods=["POST"])
 def searchEqlisInfo():
 
     print("开始执行模糊查询")
@@ -78,76 +147,59 @@ def land_location(area,class_gaOrem):
     # max_mag = -1
     # eq_area = -1
     # 做地区分类
-    try:
-        sid = area_groups[area]['id']
-        em_list = []
-        for id_num in sid:
-            try:
-                table_list = db.get_all_tablename("gasound")
-                # print("读取数据库所有的表名成功",table_list)
-                # 读取相应的表的信息并且关键字为StationID
-                locm_tablename = "tab_%s_magn" % id_num
-                print("loc——tablename", locm_tablename)
-                em_list.append(db.get_api_list(locm_tablename))
-                print("\n")
-                # print("这个是站点信息magn:",em_list)
-            except:
-                print("站点没在这个范围内部\n", )
-                continue
-        # em_data = pd.concat(em_list)
-        # 对python的变量内存进行回收
-        # del em_list
-        ga_list = []
-        for id_num in sid:
-            try:
-                table_list = db.get_all_tablename("gasound")
-                # print("读取数据库所有的表名成功", table_list)
-                # 读取相应的表的信息并且关键字为StationID
-                locs_tablename = "tab_%s_sound" % id_num
-                ga_list.append(db.get_api_list(locs_tablename))
+    # try:
 
-                # print("获取到的划分数据sound",ga_list)
-            except:
-                print("站点没在这个范围内部\n", )
-                continue
+    # except:
+    #     db.close_connect()
+    #     return "fail"
+    LocationData=[]
+    mapData_list=[]
+    sid = area_groups[area]['id']
+    print(sid)
+    key_ga=["StationID","sound_var","sound_abs_max","sound_abs_mean","sound_abs_max_top5p","sound_mean"]
+    key_em=["StationID","magn_var","magn_kurt","magn_abs_max","magn_abs_mean","magn_abs_max_top5p","magn_variance_frequency"]
+    # em_list = []
+    # ga_list = []
+    for id_num in sid:
+        # table_list = db.get_all_tablename("gasound")
+        # print("读取数据库所有的表名成功",table_list)
+        # 读取相应的表的信息并且关键字为StationID
+        if class_gaOrem=="em":
+            # print("len",len(emTable_dataList))
+            locm_tablename = "tab_%s_magn" % id_num
+            data=getTabe_data(locm_tablename,key_em)
+            for everData in data:
+                mapData_list.append(everData)
 
-        # print("galist\n",ga_list)
-        print("数据类型", type(ga_list))
-        print("emlist\n", em_list)
-        key_em=db.get_tbColTitle_data("gasound","tab_19_magn")
-        key_ga=db.get_tbColTitle_data("gasound","tab_19_sound")
-        print(key_em,key_ga)
-        if class_gaOrem=="地磁":
-            '''
-            地磁是em
-            '''
-            print(class_gaOrem,"class_gaOrem\n")
-            print(key_em)
-            key=key_em
-            #需要返回这个表中的八个数据
-
-            # result_Value=db.get_titleTarg_search()
+        # return result
+        elif class_gaOrem=="ga":
+            locs_tablename = "tab_%s_sound" % id_num
+            data=getTabe_data(locs_tablename,key_ga)
+            for everData in data:
+                mapData_list.append(everData)
         else:
-            print(class_gaOrem,"class_gaOrga\n")
-            print(key_ga)
+            print("不属于这个范围")
 
+            continue
+    # print("这个是站点信息magn:",em_list)
+        # try:
 
+        # except:
+        #     print("站点没在这个范围内部\n", )
+        #     continue
+    # for mapData in mapData_list:
+    #     LocationData.append(mapData)
 
+    if class_gaOrem=="em":
+        print(mapData_list)
+        result=jsfy.jsonfy(key_em,mapData_list)
+        return result
+    elif class_gaOrem=="ga":
+        result=jsfy.jsonfy(key_ga,mapData_list)
+        return result
+    else:
+        return json.dumps({"statement":200})
 
-
-        print("key_em",key_em)
-
-
-        keyStr = ','.join(key)
-        print("122", keyStr)
-        # result = jsfy.jsonfy(key, result)
-        # return (em_list,ga_list)
-
-        # return ("okk")
-        return "123344444142"
-    except:
-        db.close_connect()
-        return "fail"
 
 
 def seismicL_classify(magnitude):
@@ -180,7 +232,7 @@ def seismicL_classify(magnitude):
 
 
 # searchEqlisInfo()
-@app.route("/classify_magnitude", methods=["POST"])
+@api.route("/classify_magnitude", methods=["POST"])
 def classify_magnitude():
     try:
         magnitude = request.form.get("magnitude")
@@ -206,26 +258,21 @@ def classify_magnitude():
 # def gettablename():
 #     print("hhhhhhhhhhh")
 #     return "agagag"
-@app.route("/location_classify",methods=["POST"])
+@api.route("/location_classify",methods=["GET"])
 def location_classify():
     '''
     进行经纬度地域划分
     使用模糊查询
     :return:
     '''
-    # 获取用户输入的地区是哪一个地区
-    # max_mag = -1
-    # eq_area = -1
-    # 不好写
-    # 你正在查看地区划分预测所有影响因子
-
     print("开始执行地区影响因子查询")
     area=request.args.get("area")
+    print(area,"area")
     # 获取是em还是gm
     class_gaOrem=request.args.get("em_or_gm")
     # 从表名塔台id，来决定地区经纬度
     result=land_location(area,class_gaOrem)
-    print(result)
+    # print(result)
     if result==0:
         return json.dumps({"statment":"未找到信息"})
     print("你正在查看指定塔台地区划分预测所有影响因子")
@@ -247,9 +294,7 @@ def ealst_locClassify():
 
     # sqlStr="Select count(week), max(Magnitude) from eqlst ,Group by Location"
     pass
-if __name__=='__main__':
-    app.run(debug=True, port=5000, host="localhost")
-    CORS(app)
+
 
 
 

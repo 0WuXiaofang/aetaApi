@@ -8,15 +8,17 @@ from utils.db_handle import *
 import pymysql
 from utils.jsonfyDbtable import *
 import json
+from libs.redprint import Redprint
+
+api = Redprint('earthquakePredict')
 # 实例化数据库对象
 db=DB()
 jsfy=jsonfyDbtable
 # 去封装一个模糊查询
 #调用模糊查询的方法
-app = Flask(__name__)
-CORS(app, resources=r'/*')
 
-@app.route('/stationSearch_stationLoc',methods=["POST"])
+
+@api.route('/stationSearch_stationLoc',methods=["POST"])
 def search_stationLoc():
     '''
     查询站台信息关键字模糊查询地理位置
@@ -41,7 +43,7 @@ def search_stationLoc():
         db.close_connect()
         return "fail"
 
-@app.route("/stationSearch_byStationID",methods=["POST"])
+@api.route("/stationSearch_byStationID",methods=["POST"])
 def search_byStationID():
     '''
     通过ID查找
@@ -64,7 +66,7 @@ def search_byStationID():
         db.close_connect()
         return "fail"
 
-@app.route("/stationSearch_byLcoTitude",methods=["POST"])
+@api.route("/stationSearch_byLcoTitude",methods=["POST"])
 def search_byLcoTitude():
     '''
     通过给定值返回数据
@@ -88,7 +90,7 @@ def search_byLcoTitude():
         db.close_connect()
         return "fail"
 
-@app.route("/stationSearch_byLimit",methods=["POST"])
+@api.route("/stationSearch_byLimit",methods=["POST"])
 def search_byLimit():
     '''给定值的范围查询'''
     try:
@@ -118,9 +120,6 @@ def search_byLimit():
         db.close_connect()
         return "fail"
 
-if __name__=='__main__':
-    app.run(debug=True, port=5000, host="localhost")
-    CORS(app)
 
 
 
