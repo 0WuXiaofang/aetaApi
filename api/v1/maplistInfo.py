@@ -33,10 +33,10 @@ def define_EmoGm_tableData(emorgm,tablenameList):
     pass
 def get_allTable_data(tableClass):
 
-    print(tableClass)
-    print(type(tableClass))
+    # print(tableClass)
+    # print(type(tableClass))
     allTableName=db.get_all_tablename("gasound")
-    print("allTableName",allTableName)
+    # print("allTableName",allTableName)
     sound_key=["StationID","sound_var","sound_abs_max","sound_abs_mean","sound_abs_max_top5p","sound_mean"]
     magn_key=["StationID","magn_var","magn_kurt","magn_abs_max","magn_abs_mean","magn_abs_max_top5p","magn_variance_frequency"]
     # 判断给的是那种数据
@@ -56,9 +56,9 @@ def get_allTable_data(tableClass):
                     emTable_dataList.append(everData)
             else:
                 continue
-        print("len",len(emTable_dataList))
+        # print("len",len(emTable_dataList))
         result=jsfy.jsonfy(magn_key,emTable_dataList)
-        print("result\n",result)
+        # print("result\n",result)
 
         return result
 
@@ -74,9 +74,9 @@ def get_allTable_data(tableClass):
             #         化为一维
             else:
                 continue
-        print("len",len(gaTable_dataList))
+        # print("len",len(gaTable_dataList))
         result=jsfy.jsonfy(sound_key,gaTable_dataList)
-        print("\n,\n,",result)
+        # print("\n,\n,",result)
         return result
 
     else:
@@ -91,16 +91,16 @@ def searchEqlisInfo():
     key_word=request.form.get("key_word")
     alike_data=request.form.get("alike_data")
     result=db.alike_get_data(tablename, key_word,alike_data)
-    print("result",result)
+    # print("result",result)
     # 还需要表头的数据做key
     key=db.get_tbColTitle_data("gasound","eqlst")
-    print("key",key)
+    # print("key",key)
 
     keyStr = ','.join(key)
-    print("122", keyStr)
+    # print("122", keyStr)
     result = jsfy.jsonfy(key, result)
 
-    print(result)
+    # print(result)
     if result==0 or len(result)==0:
         return json.dumps({"statment":"未找到信息"})
     # key=list(range(0,len(result)))
@@ -155,7 +155,7 @@ def land_location(area,class_gaOrem):
     LocationData=[]
     mapData_list=[]
     sid = area_groups[area]['id']
-    print(sid)
+    # print(sid)
     key_ga=["StationID","sound_var","sound_abs_max","sound_abs_mean","sound_abs_max_top5p","sound_mean"]
     key_em=["StationID","magn_var","magn_kurt","magn_abs_max","magn_abs_mean","magn_abs_max_top5p","magn_variance_frequency"]
     # em_list = []
@@ -191,7 +191,7 @@ def land_location(area,class_gaOrem):
     #     LocationData.append(mapData)
 
     if class_gaOrem=="em":
-        print(mapData_list)
+        # print(mapData_list)
         result=jsfy.jsonfy(key_em,mapData_list)
         return result
     elif class_gaOrem=="ga":
@@ -236,14 +236,14 @@ def seismicL_classify(magnitude):
 def classify_magnitude():
     try:
         magnitude = request.form.get("magnitude")
-        print("地震级别", magnitude)
+        # print("地震级别", magnitude)
         #     调用函数对数据进行分类
         magnitude = float(magnitude)
         result = seismicL_classify(magnitude)
         key = db.get_tbColTitle_data("gasound","eqlst")
-        print("key",key)
+        # print("key",key)
 
-        print("地震等级分类，处理完毕", result)
+        # print("地震等级分类，处理完毕", result)
         if result == 0:
             return json.dumps({"statment": "未找到第%s地震相关信息" % magnitude})
 
@@ -267,7 +267,7 @@ def location_classify():
     '''
     print("开始执行地区影响因子查询")
     area=request.args.get("area")
-    print(area,"area")
+    # print(area,"area")
     # 获取是em还是gm
     class_gaOrem=request.args.get("em_or_gm")
     # 从表名塔台id，来决定地区经纬度

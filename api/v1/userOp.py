@@ -43,7 +43,7 @@ def oldUser_passwordisR(input_username,inputPassword):
     try:
         res = db.get_api_case("password", "eta_user", "user_name", input_username)
         if res[0] == inputPassword:
-            print(res[0])
+            # print(res[0])
             print("密码对~~~")
             return 1
         return 0
@@ -107,7 +107,7 @@ def newerInfo_check(newerUserName,newerPassWord,newerPassWord_repeat):
             #         执行数据库新用户增加操作
             print("可以增加一个新用户")
             insert_userValues = (0, newerUserName, newerPassWord, 1, 0)
-            print("10555",insert_userValues)
+            # print("10555",insert_userValues)
             db.insert_dab("eta_user", str(insert_userValues))
             # 插入完后关闭数据库
 
@@ -133,7 +133,7 @@ def user_login():
         userName = request.form.get("userName")
         passWord = request.form.get("passWord")
         if userPassword_isRight(userName, passWord):
-            print("userLogin", 200)
+            # print("userLogin", 200)
             return json.dumps({"userLogin": 200})
         return json.dumps({"fault,输入错误": 500})
     except:
@@ -152,7 +152,7 @@ def user_register():
         if rgistResult == "新用户增加成功":
             return json.dump({"200": "注册成功"})
         else:
-            print(type(rgistResult))
+            # print(type(rgistResult))
             return rgistResult
     except:
         db.close_connect()
@@ -168,8 +168,8 @@ def found_userInfo():
         targ_title = request.form.get("targ_title")
         print("查询用户讯息")
         search_data = db.get_api_case("*", "eta_user", targ_title, targ_userData)
-        print("查询的讯息", search_data)
-        print(len(search_data))
+        # print("查询的讯息", search_data)
+        # print(len(search_data))
         # print(search_data[0])
         # 格式化
         # search_data=jsfy.jsonfy(targ_userData,search_data)
@@ -178,9 +178,9 @@ def found_userInfo():
         else:
             key = db.get_tbColTitle_data("gasound", "eta_user")
             keyStr = ','.join(key)
-            print("122", keyStr)
+            # print("122", keyStr)
             result = jsfy.l1_tol1(key, search_data)
-            print("125", result)
+            # print("125", result)
             return result
     except:
         db.close_connect()

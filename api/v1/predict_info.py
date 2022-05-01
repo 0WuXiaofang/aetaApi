@@ -85,7 +85,7 @@ def get_keywordSearch():
         search_result=db.contactLocation_alikeSearch("Title",columnValue)
         search_List=["Title","id","class_name","StationID","magn_level","Longitude","Latitude"]
         kSearch_result = jsfy.jsonfy(search_List,search_result)
-        print(kSearch_result)
+        # print(kSearch_result)
         return kSearch_result
 
     except:
@@ -109,7 +109,7 @@ def get_StationID_search_data():
         # search_ListStr="Latitude=%d&&Longitude=%d"%(Latitude,Longitude)
         # search_result =db.get_youDefine_fondata("Location","staioninfo",search_ListStr)
         search_result = jsfy.jsonfy(search_List, search_result)
-        print(search_result)
+        # print(search_result)
         return search_result
     except:
         db.close_connect()
@@ -132,7 +132,7 @@ def get_magnLevel_search_data():
         # search_ListStr="Latitude=%d&&Longitude=%d"%(Latitude,Longitude)
         # search_result =db.get_youDefine_fondata("Location","staioninfo",search_ListStr)
         search_result = jsfy.jsonfy(search_List, search_result)
-        print(search_result)
+        # print(search_result)
         return search_result
 
     except:
@@ -158,7 +158,7 @@ def get_className_search_data():
         # search_ListStr="Latitude=%d&&Longitude=%d"%(Latitude,Longitude)
         # search_result =db.get_youDefine_fondata("Location","staioninfo",search_ListStr)
         search_result = jsfy.jsonfy(search_List, search_result)
-        print(search_result)
+        # print(search_result)
         return search_result
 
     except:
@@ -179,7 +179,7 @@ def get_predictTable_alldata():
     targ_keyStr = ','.join(predictTable_title)
     predictTable_data = db.get_tragColumn_data_list(targ_keyStr,"predict_t")
     predictTable_data = jsfy.jsonfy(predictTable_title,predictTable_data)
-    print("preallT", predictTable_data)
+    # print("preallT", predictTable_data)
     return predictTable_data
     # try:
 

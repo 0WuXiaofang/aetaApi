@@ -10,6 +10,8 @@ class DB(object):
         # self.dbname=self.db_conf["db"]
         # 获取mysql连接信息
         self.db_conf = ConfigParse.get_db_config()
+        # self.connection._write_timeout = 100000
+
         # 获取连接对象
         self.conn = pymysql.connect(
             host=self.db_conf["host"],
@@ -38,6 +40,7 @@ class DB(object):
 
         sqlStr="select stationinfo.Title,predict_t.* from stationinfo inner join predict_t on stationinfo.StationID=predict_t.StationID WHERE %s.%s=%s;"%(targTable_name,searchTarg,targData)
         print(sqlStr)
+        self.conn.ping(reconnect=True)
         self.cur.execute(sqlStr)
         res = self.cur.fetchall()
         return res
@@ -46,6 +49,7 @@ class DB(object):
 
         sqlStr="select stationinfo.Title,predict_t.* from stationinfo inner join predict_t on stationinfo.StationID=predict_t.StationID WHERE stationinfo."+searchTarg+" LIKE '%"+targData+"%'";
         print(sqlStr)
+        self.conn.ping(reconnect=True)
         self.cur.execute(sqlStr)
         res = self.cur.fetchall()
         return res
@@ -55,6 +59,7 @@ class DB(object):
 
         sqlStr="select stationinfo.Title,predict_t.* from stationinfo inner join predict_t on stationinfo.StationID=predict_t.StationID WHERE %s" % (lim_scope)
         print(sqlStr)
+        self.conn.ping(reconnect=True)
         self.cur.execute(sqlStr)
         res = self.cur.fetchall()
         return res
@@ -72,6 +77,7 @@ class DB(object):
         '''
         sqlStr = "select %s from %s where %s" % (selectTarge,dbtablename,defineTarge)
         print("youdefine",sqlStr)
+        self.conn.ping(reconnect=True)
         self.cur.execute(sqlStr)
         res = self.cur.fetchall()
 
@@ -82,6 +88,7 @@ class DB(object):
         """获取一个表所有的对象数据"""
         sqlStr = "select %s from %s"%(columnTitle,dbtablename)
         print("gettarg_tabledata",sqlStr)
+        self.conn.ping(reconnect=True)
         self.cur.execute(sqlStr)
         data = self.cur.fetchall()
         # 转成一个list
@@ -92,6 +99,7 @@ class DB(object):
     def get_api_list(self,dbtablename):
         """获取一个表所有的对象数据"""
         sqlStr = "select * from %s"%dbtablename
+        self.conn.ping(reconnect=True)
         self.cur.execute(sqlStr)
         data = self.cur.fetchall()
         # 转成一个list
@@ -108,6 +116,7 @@ class DB(object):
     def get_rely_data(self, col_data, dbtablename,limit_item,limit_data):
         """获取所有数据库中的某一条限定相关数据"""
         sqlStr = "select %s from %s where %s=%s " % (col_data,dbtablename,limit_item,limit_data)
+        self.conn.ping(reconnect=True)
         self.cur.execute(sqlStr)
         rely_data = eval(self.cur.fetchall()[0][0])
         return rely_data
@@ -118,12 +127,14 @@ class DB(object):
         # errorInfo, res_data, case_id)
         sqlStr = "update  set %s=\"%s\", %s=\"%s\" where id=%s" % (
         error_item,errorInfo,resitem, res_data, case_id)
+        self.conn.ping(reconnect=True)
         self.cur.execute(sqlStr)
         self.conn.commit()
 
     def insert_dab(self,dbtablename,insert_values):
         sqlStr = "INSERT INTO %s VALUES %s"%(dbtablename,insert_values)
         print("数据库管理员正在插入数据\n",sqlStr)
+        self.conn.ping(reconnect=True)
         self.cur.execute(sqlStr)
         print("插入完成")
         self.conn.commit()
@@ -138,10 +149,12 @@ class DB(object):
         # sqlStr="select id, isdeny, islogin, password, user_name from eta_user where user_name='aFang'"
         sqlStr="select %s from %s where %s='%s'"%(dbtablename,select_title,select_dataTitle,select_data)
         print("数据库管理员正在查找数据\n",sqlStr)
+        self.conn.ping(reconnect=True)
         self.cur.execute(sqlStr)
         if self.cur.execute(sqlStr)==0:
             return 0
         else:
+            self.conn.ping(reconnect=True)
             print(self.cur.execute(sqlStr))
             res = list(self.cur.fetchall())
             print("模糊查询完毕")
@@ -154,6 +167,7 @@ class DB(object):
     def get_api_id(self, dbtablename,id):
         """获取表中id"""
         sqlStr = "select * from %s where id=%s" %(dbtablename,id)
+        self.conn.ping(reconnect=True)
         self.cur.execute(sqlStr)
         api_case_list = list(self.cur.fetchall())
         return api_case_list
@@ -162,6 +176,7 @@ class DB(object):
         """获取表中指定数据"""
         sqlStr = "select %s from %s where %s='%s'" % (targ,dbtablename,column_title,column_value)
         print("found",sqlStr)
+        self.conn.ping(reconnect=True)
         self.cur.execute(sqlStr)
         if self.cur.execute(sqlStr)==0:
             return 0
@@ -175,6 +190,7 @@ class DB(object):
         """获取表中id"""
         sqlStr = "select * from %s where id='%d'" % (dbtablename,id_value)
         print("found\n",sqlStr)
+        self.conn.ping(reconnect=True)
         self.cur.execute(sqlStr)
         api_id = self.cur.fetchall()[0][0]
         return api_id
@@ -183,6 +199,7 @@ class DB(object):
         # 对某一数据进行关键字段模糊查询
         sqlStr = "select * from "+dbtablename+" WHERE " + keyword + " LIKE '%"+alike_data+"%'"
         print("模糊",sqlStr)
+        self.conn.ping(reconnect=True)
         self.cur.execute(sqlStr)
         if self.cur.execute(sqlStr)==0:
             return 0
@@ -198,6 +215,7 @@ class DB(object):
         print("开始对%s范围进行数据的查询"%lim_scope)
         sqlStr = "select "+targ_data+" from "+dbtablename+" WHERE " + column_title + lim_scope
         # print("范围查询语句",sqlStr)
+        self.conn.ping(reconnect=True)
         self.cur.execute(sqlStr)
         if self.cur.execute(sqlStr)==0:
             return 0
@@ -215,11 +233,12 @@ class DB(object):
 
         print("开始对%s表进行表头的查询"%dbtablename)
         sqlStr = "SELECT COLUMN_NAME FROM information_schema.COLUMNS WHERE TABLE_SCHEMA = '%s' AND TABLE_NAME = '%s'"%(dbname,dbtablename)
-        print("范围查询语句",sqlStr)
+        # print("范围查询语句",sqlStr)
+        self.conn.ping(reconnect=True)
         self.cur.execute(sqlStr)
         get_tbColTitle_data=list(self.cur.fetchall())
         print("表头查询完毕")
-        print("biaotou1",get_tbColTitle_data)
+        # print("biaotou1",get_tbColTitle_data)
         res=[]
         for i in get_tbColTitle_data:
             # print(i)
@@ -227,35 +246,62 @@ class DB(object):
         print("打印数据",res)
 
         return res
+    # 获取一个表中的指定列的数据
+    def defineTable_searchLimitnum(self,dbtablename,columnTitle,limitPage,limitNum):
+        '''
+        做查表限制查询
+        :param self:
+        :param limitPage:
+        :param limitDatanum:
+        :param tableName:
+        :return:
+        '''
+        amount=(limitPage-1)*30
+        print("amount",amount)
+        print(columnTitle,"columnTitle")
 
+        columnTitleStr=','.join(columnTitle)
+        sqlStr = "select %s from %s WHERE id >=(SELECT id FROM %s LIMIT %d,1 ) LIMIT %d"%(columnTitleStr,dbtablename,dbtablename,amount,limitNum)
+        # print("gettarg_tabledata",sqlStr)
+        self.conn.ping(reconnect=True)
+        self.cur.execute(sqlStr)
+        data = self.cur.fetchall()
+        # 转成一个list
+        apiList = list(data)
+        # print("apiList",apiList)
+        return apiList
 
     def get_all_tablename(self,dbname):
         print("开始查询所有数据库的表名")
         sqlStr="SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = '%s'"%dbname
-        print("查询表名语句",sqlStr)
+        # print("查询表名语句",sqlStr)
+        self.conn.ping(reconnect=True)
         self.cur.execute(sqlStr)
         get_all_tablename=list(self.cur.fetchall())
         # get_all_tablename[0] for get_all_tablename in self.cursor.fetchall()
         res=[]
         for i in get_all_tablename:
-            # print(i)
+        # print(i)
             res.append(i[0])
         print("打印数据",res)
         return res
 
     def update_store_data(self,dbtablename,column_title,set_value ,id):
-        # 修改某个指定数据的值
+            # 修改某个指定数据的值
 
         sqlStr = "select %s from %s where id=%s" % (column_title, dbtablename,id)
+        self.conn.ping(reconnect=True)
         self.cur.execute(sqlStr)
         if self.cur.fetchall():
             sqlStr = "update %s set %s=\"%s\" where id=%s" % (dbtablename,column_title,set_value ,id)
             print(sqlStr)
+            self.conn.ping(reconnect=True)
             self.cur.execute(sqlStr)
             self.conn.commit()
         else:
             # 可能写的有错误
             sqlStr = "insert into %s values(%s, %s)" % (dbtablename, datetime.now())
+            self.conn.ping(reconnect=True)
             self.cur.execute(sqlStr)
             self.conn.commit()
     def error_rollback(self):
@@ -265,23 +311,23 @@ class DB(object):
         '''
         self.conn.rollback()
         self.close_connect()
-    # def create_table(self,tablename):
-    #     '''
-    #     创建一个表
-    #     :param tablename:
-    #     :return:
-    #     '''
-    #     table_sql = 'CREATE TABLE IF NOT EXISTS ' + filename + '(' + 'id int not null auto_increment primary key,' + tables + ')' + 'ENGINE=MyISAM DEFAULT CHARSET=utf8;'
-    #     print(table_sql)
-    #     # 开始创建
-    #     print("开始创建表")
-    #     # 创建游标
-    #     # cursor = conn.cursor()
-    #     print(table_sql)
-    #     cur.execute(table_sql)
-    #     # 执行创建表
-    #     conn.commit()
-    #     print("创建完成")
+        # def create_table(self,tablename):
+        #     '''
+        #     创建一个表
+        #     :param tablename:
+        #     :return:
+        #     '''
+        #     table_sql = 'CREATE TABLE IF NOT EXISTS ' + filename + '(' + 'id int not null auto_increment primary key,' + tables + ')' + 'ENGINE=MyISAM DEFAULT CHARSET=utf8;'
+        #     print(table_sql)
+        #     # 开始创建
+        #     print("开始创建表")
+        #     # 创建游标
+        #     # cursor = conn.cursor()
+        #     print(table_sql)
+        #     cur.execute(table_sql)
+        #     # 执行创建表
+        #     conn.commit()
+        #     print("创建完成")
 
 
 
