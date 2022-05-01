@@ -5,21 +5,10 @@
     <bookmark url="file://$PROJECT_DIR$/api/v1/foundationData.py" line="107" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f2cbe2e-3e0b-4879-8ad2-969e4d848648" name="Default Changelist" comment="">
+    <list default="true" id="4f2cbe2e-3e0b-4879-8ad2-969e4d848648" name="Default Changelist" comment="接口全部修复">
+      <change afterPath="$PROJECT_DIR$/sql/2to3-3.6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sql/connections.ncx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_windows/laf.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/v1/foundationData.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/v1/foundationData.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/v1/maplistInfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/v1/maplistInfo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/v1/predict_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/v1/predict_info.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/v1/stationinfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/v1/stationinfo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/v1/userOp.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/v1/userOp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codestyles/Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/init.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config/init.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/intest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config/intest.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debugger.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/editor.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/db_handle.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/db_handle.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,10 +37,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/v1/foundationData.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
+            <state relative-caret-position="-2107">
               <caret line="74" column="50" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="50" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
@@ -132,10 +121,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/v1/predict_info.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
+            <state relative-caret-position="3363">
               <caret line="177" selection-start-line="177" selection-end-line="177" selection-end-column="43" />
               <folding>
                 <element signature="e#11#43#0" expanded="true" />
@@ -254,11 +243,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-13" />
-    <option name="y" value="-13" />
-    <option name="width" value="2579" />
-    <option name="height" value="1619" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-32" />
+    <option name="y" value="-25" />
+    <option name="width" value="1075" />
+    <option name="height" value="1098" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -502,7 +491,7 @@
       <workItem from="1650779179845" duration="345000" />
       <workItem from="1650889065606" duration="1189000" />
       <workItem from="1650960189338" duration="20923000" />
-      <workItem from="1651298277781" duration="19191000" />
+      <workItem from="1651298277781" duration="19988000" />
     </task>
     <task id="LOCAL-00001" summary="将数据库表建立部分加入，使用的是mysql8.0">
       <created>1649776855535</created>
@@ -609,11 +598,18 @@
       <option name="project" value="LOCAL" />
       <updated>1651113911128</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="接口全部修复">
+      <created>1651401105507</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1651401105508</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="256484000" />
+    <option name="totallyTimeSpent" value="257281000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -625,22 +621,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="830" extended-state="6" />
-    <editor active="true" />
+    <frame x="-25" y="-20" width="860" height="878" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49282297" visible="true" weight="0.23726542" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49282297" visible="true" weight="0.4413965" />
       <window_info id="Structure" order="1" weight="0.29149798" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" sideWeight="0.49932975" weight="0.3295129" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
       <window_info anchor="bottom" id="Favorites" order="1" weight="0.29022083" />
-      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.49311742" weight="0.5294118" />
-      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.24798928" side_tool="true" visible="true" weight="0.058739256" />
+      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.7468828" visible="true" weight="0.49463806" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="3" sideWeight="0.2531172" side_tool="true" visible="true" weight="0.49463806" />
       <window_info anchor="bottom" id="Version Control" order="4" sideWeight="0.49635628" weight="0.3280757" />
       <window_info anchor="bottom" id="Python Console" order="5" sideWeight="0.762753" weight="0.533123" />
       <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" sideWeight="0.49932975" weight="0.32998565" />
-      <window_info active="true" anchor="bottom" id="Run" order="9" sideWeight="0.7520107" visible="true" weight="0.058739256" />
+      <window_info anchor="bottom" id="Run" order="9" sideWeight="0.7520107" weight="0.61891115" />
       <window_info anchor="bottom" id="Debug" order="10" weight="0.3982684" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
@@ -743,7 +738,8 @@
     <MESSAGE value="地震预测，地震震级范围查询完毕" />
     <MESSAGE value="地震数据部分修改接口记得查收" />
     <MESSAGE value="接口结构工厂化，使用蓝图，修复以前错误接口，通过分区来查询地震信息" />
-    <option name="LAST_COMMIT_MESSAGE" value="接口结构工厂化，使用蓝图，修复以前错误接口，通过分区来查询地震信息" />
+    <MESSAGE value="接口全部修复" />
+    <option name="LAST_COMMIT_MESSAGE" value="接口全部修复" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://F:/Anaconda/anaconda/envs/todb.py/Lib/site-packages/flask/app.py">
@@ -1029,16 +1025,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/v1/predict_info.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="177" selection-start-line="177" selection-end-line="177" selection-end-column="43" />
-          <folding>
-            <element signature="e#11#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utils/db_handle.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="106">
@@ -1068,10 +1054,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/v1/foundationData.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
+        <state relative-caret-position="-2107">
           <caret line="74" column="50" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="50" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/v1/predict_info.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3363">
+          <caret line="177" selection-start-line="177" selection-end-line="177" selection-end-column="43" />
+          <folding>
+            <element signature="e#11#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
