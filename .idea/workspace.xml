@@ -5,11 +5,7 @@
     <bookmark url="file://$PROJECT_DIR$/api/v1/foundationData.py" line="107" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f2cbe2e-3e0b-4879-8ad2-969e4d848648" name="Default Changelist" comment="接口全部修复">
-      <change afterPath="$PROJECT_DIR$/sql/2to3-3.6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sql/connections.ncx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="4f2cbe2e-3e0b-4879-8ad2-969e4d848648" name="Default Changelist" comment="接口全部修复" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -491,7 +487,7 @@
       <workItem from="1650779179845" duration="345000" />
       <workItem from="1650889065606" duration="1189000" />
       <workItem from="1650960189338" duration="20923000" />
-      <workItem from="1651298277781" duration="19988000" />
+      <workItem from="1651298277781" duration="20227000" />
     </task>
     <task id="LOCAL-00001" summary="将数据库表建立部分加入，使用的是mysql8.0">
       <created>1649776855535</created>
@@ -609,7 +605,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="257281000" />
+    <option name="totallyTimeSpent" value="257520000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -628,8 +624,8 @@
       <window_info anchor="bottom" id="Concurrent Activities Diagram" sideWeight="0.49932975" weight="0.3295129" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
       <window_info anchor="bottom" id="Favorites" order="1" weight="0.29022083" />
-      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.7468828" visible="true" weight="0.49463806" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="3" sideWeight="0.2531172" side_tool="true" visible="true" weight="0.49463806" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="2" sideWeight="0.7468828" visible="true" weight="0.49463806" />
+      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.2531172" side_tool="true" visible="true" weight="0.49463806" />
       <window_info anchor="bottom" id="Version Control" order="4" sideWeight="0.49635628" weight="0.3280757" />
       <window_info anchor="bottom" id="Python Console" order="5" sideWeight="0.762753" weight="0.533123" />
       <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
