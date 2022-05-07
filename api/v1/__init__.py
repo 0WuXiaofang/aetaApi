@@ -1,5 +1,5 @@
 from flask import Blueprint
-from api.v1 import maplistInfo,predict_info,foundationData,stationinfo,userOp
+from api.v1 import maplistInfo,predict_info,foundationData,stationinfo,userOp,correctCheck
 
 
 def create_blueprint_aFang():
@@ -9,4 +9,5 @@ def create_blueprint_aFang():
     foundationData.api.register(bp, url_prefix='/earthquakePredict')
     stationinfo.api.register(bp, url_prefix='/earthquakePredict')
     userOp.api.register(bp, url_prefix='/earthquakePredict')
+    correctCheck.api.register(bp, url_prefix='/earthquakePredict')
     return bp
